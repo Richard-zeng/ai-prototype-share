@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>死了么 - 预警</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="app-body">
+    <main class="app-screen">
+      <div class="statusbar">
+        <span data-now>09:41</span>
+        <span class="dynamic-island"></span>
+        <span class="signal-icons"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-three-quarters"></i></span>
+      </div>
+
+      <header class="topbar">
+        <div>
+          <h1>预警中心</h1>
+          <span class="sub">别真把大家吓醒</span>
+        </div>
+        <button class="icon-btn" aria-label="筛选"><i class="fa-solid fa-sliders"></i></button>
+      </header>
+
+      <section class="content">
+        <section class="card overflow-hidden">
+          <div class="p-4">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <span class="pill bg-[#fff2dd] text-[#a35d00]"><i class="fa-solid fa-triangle-exclamation"></i> 二级预警</span>
+                <div class="title-lg mt-3">你已 19 小时没动静</div>
+                <p class="muted mt-2 text-[13px] font-semibold">系统怀疑你不是睡懒觉，就是进入“周一加载失败”。</p>
+              </div>
+              <div class="grid h-[58px] w-[58px] place-items-center rounded-[8px] bg-[#ff6f61] text-white shadow-lg shadow-red-200">
+                <i class="fa-solid fa-bell text-2xl"></i>
+              </div>
+            </div>
+            <div class="mt-4 grid grid-cols-2 gap-2">
+              <button class="btn-primary min-h-[44px]" data-toast-target="#alert-toast">我活着</button>
+              <button class="btn-ghost min-h-[44px]">派人看看</button>
+            </div>
+          </div>
+          <div class="h-[96px] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=80');"></div>
+        </section>
+
+        <div id="alert-toast" class="fixed left-8 right-8 bottom-[98px] z-30 translate-y-3 rounded-full bg-[#17211d] px-4 py-3 text-center text-sm font-extrabold text-white opacity-0 pointer-events-none transition-all">
+          已解除预警，守护人停止脑补
+        </div>
+
+        <section class="section-title">
+          <span>处理进度</span>
+          <span class="meta">订单 #DLM-0921</span>
+        </section>
+
+        <section class="card p-4">
+          <div class="timeline">
+            <div class="timeline-item">
+              <strong class="block text-sm font-black">21:30 打卡超时</strong>
+              <span class="meta">系统先戳你：醒醒，别装死</span>
+            </div>
+            <div class="timeline-item">
+              <strong class="block text-sm font-black">22:00 通知守护人</strong>
+              <span class="meta">阿北已读，正在语音轰炸</span>
+            </div>
+            <div class="timeline-item">
+              <strong class="block text-sm font-black">22:20 骑手待命</strong>
+              <span class="meta">只接安全查看，不做恐怖片桥段</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <span>当前接单骑手</span>
+          <span class="pill">3.2km</span>
+        </section>
+
+        <section class="card p-4">
+          <div class="flex items-center gap-3">
+            <img class="h-16 w-16 rounded-[8px] object-cover" src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&w=220&q=80" alt="骑手照片" />
+            <div class="min-w-0 flex-1">
+              <strong class="block text-base font-black">阿强师傅</strong>
+              <span class="meta">生前跑外卖，赛博售后 4.9 分</span>
+              <div class="mt-2 flex gap-2">
+                <span class="chip">带手套</span>
+                <span class="chip">不乱翻</span>
+              </div>
+            </div>
+            <button class="icon-btn" aria-label="联系骑手"><i class="fa-solid fa-phone"></i></button>
+          </div>
+        </section>
+      </section>
+
+      <nav class="tabbar" aria-label="底部导航">
+        <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>首页</span></a>
+        <a class="tab-item" href="checkin.html"><i class="fa-solid fa-heart-pulse"></i><span>报平安</span></a>
+        <a class="tab-item active" href="alerts.html"><i class="fa-solid fa-bell"></i><span>预警</span></a>
+        <a class="tab-item" href="profile.html"><i class="fa-solid fa-user-astronaut"></i><span>我的</span></a>
+      </nav>
+    </main>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

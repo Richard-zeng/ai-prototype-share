@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>闪映 · 剪辑</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body class="prototype-body">
+  <div class="device-frame" role="img" aria-label="iPhone 15 原型外框">
+    <main class="device-screen screen-dark">
+      <div class="status-bar" aria-hidden="true">
+        <span class="js-time">9:41</span>
+        <span class="status-icons"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><span class="battery"></span></span>
+      </div>
+
+      <section class="page">
+        <header class="top-nav">
+          <a class="icon-circle" href="create.html" aria-label="返回拍摄"><i class="fa-solid fa-chevron-left"></i></a>
+          <h1 class="m-0 text-base font-black">剪辑作品</h1>
+          <button class="btn-secondary h-10 min-h-0 px-4" type="button" data-publish>发布</button>
+        </header>
+
+        <section class="mt-5 overflow-hidden rounded-[30px] bg-[#11131a] shadow-2xl" aria-label="视频预览">
+          <div class="relative aspect-[9/13] overflow-hidden">
+            <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=82" alt="剪辑中的视频预览">
+            <div class="absolute inset-0 bg-[linear-gradient(180deg,transparent_52%,rgba(0,0,0,0.72))]"></div>
+            <div class="absolute left-4 right-4 top-4 flex items-center justify-between">
+              <span class="pill bg-black/42 text-white backdrop-blur-md"><i class="fa-solid fa-scissors"></i> 00:15</span>
+              <button class="icon-circle h-10 w-10" type="button" data-toast="预览播放"><i class="fa-solid fa-play"></i></button>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <p class="m-0 rounded-2xl bg-black/38 p-3 text-sm font-extrabold leading-5 backdrop-blur-md">字幕预览：周末也能穿得轻松一点</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-4" aria-label="时间线">
+          <div class="flex items-center justify-between">
+            <h2 class="m-0 text-sm font-black">时间线</h2>
+            <button class="text-xs font-extrabold text-[#21d4e8]" type="button" data-toast="已插入转场">添加转场</button>
+          </div>
+          <div class="mt-3 flex h-16 gap-2 overflow-hidden rounded-[22px] bg-white/9 p-2">
+            <div class="w-20 rounded-2xl bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=240&q=82')" aria-label="片段一"></div>
+            <div class="w-24 rounded-2xl bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=240&q=82')" aria-label="片段二"></div>
+            <div class="w-20 rounded-2xl bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=240&q=82')" aria-label="片段三"></div>
+            <div class="grid w-12 place-items-center rounded-2xl border border-dashed border-white/30 text-white/70"><i class="fa-solid fa-plus"></i></div>
+          </div>
+        </section>
+
+        <section class="mt-4 grid grid-cols-3 gap-3" aria-label="剪辑工具">
+          <button class="rounded-[20px] bg-white p-3 text-left text-[#07111f]" data-group="tool" aria-pressed="true" type="button">
+            <i class="fa-solid fa-font text-[#ff3d71]"></i>
+            <span class="mt-3 block text-sm font-black">文字</span>
+            <span class="text-[11px] font-bold text-slate-500">标题/贴纸</span>
+          </button>
+          <button class="rounded-[20px] bg-white/10 p-3 text-left" data-group="tool" aria-pressed="false" type="button">
+            <i class="fa-solid fa-music text-[#21d4e8]"></i>
+            <span class="mt-3 block text-sm font-black">音乐</span>
+            <span class="text-[11px] font-bold text-slate-400">热歌匹配</span>
+          </button>
+          <button class="rounded-[20px] bg-white/10 p-3 text-left" data-group="tool" aria-pressed="false" type="button">
+            <i class="fa-solid fa-closed-captioning text-[#ffcc47]"></i>
+            <span class="mt-3 block text-sm font-black">字幕</span>
+            <span class="text-[11px] font-bold text-slate-400">自动识别</span>
+          </button>
+          <button class="rounded-[20px] bg-white/10 p-3 text-left" data-group="tool" aria-pressed="false" type="button">
+            <i class="fa-solid fa-wand-magic-sparkles text-[#45d483]"></i>
+            <span class="mt-3 block text-sm font-black">滤镜</span>
+            <span class="text-[11px] font-bold text-slate-400">电影感</span>
+          </button>
+          <button class="rounded-[20px] bg-white/10 p-3 text-left" data-group="tool" aria-pressed="false" type="button">
+            <i class="fa-solid fa-microphone-lines text-[#f472b6]"></i>
+            <span class="mt-3 block text-sm font-black">配音</span>
+            <span class="text-[11px] font-bold text-slate-400">降噪</span>
+          </button>
+          <button class="rounded-[20px] bg-white/10 p-3 text-left" data-group="tool" aria-pressed="false" type="button">
+            <i class="fa-solid fa-shield-heart text-[#a78bfa]"></i>
+            <span class="mt-3 block text-sm font-black">检查</span>
+            <span class="text-[11px] font-bold text-slate-400">版权/安全</span>
+          </button>
+        </section>
+      </section>
+    </main>
+  </div>
+  <script src="prototype.js"></script>
+</body>
+</html>

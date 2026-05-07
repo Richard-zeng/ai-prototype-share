@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>古诗词 App 高保真原型</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="prototype-board">
+    <header class="board-head">
+      <div>
+        <h1 class="board-title">诗栖 App 高保真原型</h1>
+        <p class="board-copy">
+          核心链路覆盖今日读诗、发现搜索、诗词详情、背诵练习、收藏书架、我的与设置。每个界面都是独立 HTML 文件，主入口仅用 iframe 平铺展示，尺寸按 iPhone 15 Pro 逻辑屏幕模拟。
+        </p>
+      </div>
+      <div class="board-meta">
+        <div>设备：iPhone 15 Pro</div>
+        <div>画布：393 × 852 CSS px</div>
+        <div>技术：HTML + Tailwind CDN + FontAwesome</div>
+      </div>
+    </header>
+
+    <main class="phone-grid" aria-label="所有原型界面">
+      <section class="preview-card">
+        <div class="preview-label"><b>01 今日</b><span>home.html</span></div>
+        <div class="phone-frame"><iframe title="今日页面" src="home.html"></iframe></div>
+      </section>
+
+      <section class="preview-card">
+        <div class="preview-label"><b>02 发现</b><span>discover.html</span></div>
+        <div class="phone-frame"><iframe title="发现页面" src="discover.html"></iframe></div>
+      </section>
+
+      <section class="preview-card">
+        <div class="preview-label"><b>03 诗词详情</b><span>poem.html</span></div>
+        <div class="phone-frame"><iframe title="诗词详情页面" src="poem.html"></iframe></div>
+      </section>
+
+      <section class="preview-card">
+        <div class="preview-label"><b>04 练习</b><span>practice.html</span></div>
+        <div class="phone-frame"><iframe title="练习页面" src="practice.html"></iframe></div>
+      </section>
+
+      <section class="preview-card">
+        <div class="preview-label"><b>05 收藏</b><span>library.html</span></div>
+        <div class="phone-frame"><iframe title="收藏页面" src="library.html"></iframe></div>
+      </section>
+
+      <section class="preview-card">
+        <div class="preview-label"><b>06 我的</b><span>profile.html</span></div>
+        <div class="phone-frame"><iframe title="我的页面" src="profile.html"></iframe></div>
+      </section>
+
+      <section class="preview-card">
+        <div class="preview-label"><b>07 设置</b><span>settings.html</span></div>
+        <div class="phone-frame"><iframe title="设置页面" src="settings.html"></iframe></div>
+      </section>
+    </main>
+  </body>
+</html>

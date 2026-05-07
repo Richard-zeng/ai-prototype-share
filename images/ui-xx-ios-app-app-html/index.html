@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XX 应用原型总览</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-stage">
+      <section class="index-title mb-8">
+        <div class="mb-5 inline-flex h-12 items-center gap-3 rounded-2xl bg-white/80 px-4 font-extrabold shadow-lg shadow-slate-900/5">
+          <span class="flex h-8 w-8 items-center justify-center rounded-xl bg-slate-950 text-white">XX</span>
+          <span>iOS 应用原型</span>
+        </div>
+        <h1 class="max-w-6xl text-4xl font-black leading-tight text-slate-950 md:text-[44px]">
+          <span class="block">把成长、专注与情绪管理</span>
+          <span class="block">收进每天可执行的一屏。</span>
+        </h1>
+        <p class="mt-5 max-w-2xl text-base font-medium leading-8 text-slate-600 md:text-lg">
+          XX 是一款面向年轻职场人的每日成长 App，核心体验由今日行动、课程练习、周计划、数据洞察、共修社群与个人中心构成。下方每行展示两个主要页面入口，点击可查看完整 iOS 风格页面。
+        </p>
+      </section>
+
+      <section class="module-grid">
+        <a class="module-card flex gap-5 p-5" href="today.html">
+          <div class="preview-phone">
+            <div class="preview-island"></div>
+            <div class="preview-bg" style="background-image: url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="preview-content flex flex-col justify-end">
+              <div class="rounded-3xl bg-white/85 p-3 shadow-xl">
+                <p class="text-xs font-black text-slate-500">今日行动</p>
+                <p class="mt-1 text-lg font-black leading-5 text-slate-950">专注晨间<br />12 分钟</p>
+                <div class="mt-3 progress-bar"><span style="width: 68%;"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col justify-between py-2">
+            <div>
+              <i class="fa-solid fa-sun mb-4 text-2xl text-amber-500"></i>
+              <h2 class="text-2xl font-black text-slate-950">今日</h2>
+              <p class="mt-3 text-sm font-medium leading-6 text-slate-600">聚合今日练习、待办和情绪状态，帮助用户从一件最重要的小事开始。</p>
+            </div>
+            <span class="mt-5 text-sm font-black text-blue-600">查看页面 <i class="fa-solid fa-chevron-right ml-1"></i></span>
+          </div>
+        </a>
+
+        <a class="module-card flex gap-5 p-5" href="courses.html">
+          <div class="preview-phone">
+            <div class="preview-island"></div>
+            <div class="preview-bg" style="background-image: url('https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="preview-content flex flex-col gap-2">
+              <div class="mt-auto rounded-3xl bg-white/90 p-3">
+                <p class="text-xs font-black text-slate-500">推荐课程</p>
+                <p class="mt-1 text-base font-black leading-5">深度工作入门</p>
+                <p class="mt-2 text-[11px] font-bold text-slate-500">7 节课 · 已学 42%</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col justify-between py-2">
+            <div>
+              <i class="fa-solid fa-book-open-reader mb-4 text-2xl text-blue-500"></i>
+              <h2 class="text-2xl font-black text-slate-950">课程</h2>
+              <p class="mt-3 text-sm font-medium leading-6 text-slate-600">围绕专注、情绪、习惯和沟通建立可持续的微课程路径。</p>
+            </div>
+            <span class="mt-5 text-sm font-black text-blue-600">查看页面 <i class="fa-solid fa-chevron-right ml-1"></i></span>
+          </div>
+        </a>
+
+        <a class="module-card flex gap-5 p-5" href="plan.html">
+          <div class="preview-phone">
+            <div class="preview-island"></div>
+            <div class="preview-bg" style="background-image: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="preview-content">
+              <div class="rounded-3xl bg-white/90 p-3">
+                <p class="text-xs font-black text-slate-500">本周计划</p>
+                <div class="mt-3 grid grid-cols-4 gap-2">
+                  <span class="h-12 rounded-2xl bg-blue-500"></span>
+                  <span class="h-12 rounded-2xl bg-emerald-400"></span>
+                  <span class="h-12 rounded-2xl bg-slate-200"></span>
+                  <span class="h-12 rounded-2xl bg-rose-400"></span>
+                </div>
+                <p class="mt-3 text-sm font-black">完成 5 / 8</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col justify-between py-2">
+            <div>
+              <i class="fa-solid fa-calendar-check mb-4 text-2xl text-emerald-500"></i>
+              <h2 class="text-2xl font-black text-slate-950">计划</h2>
+              <p class="mt-3 text-sm font-medium leading-6 text-slate-600">把目标拆成一周节奏，包含习惯、提醒、复盘与行动优先级。</p>
+            </div>
+            <span class="mt-5 text-sm font-black text-blue-600">查看页面 <i class="fa-solid fa-chevron-right ml-1"></i></span>
+          </div>
+        </a>
+
+        <a class="module-card flex gap-5 p-5" href="insights.html">
+          <div class="preview-phone">
+            <div class="preview-island"></div>
+            <div class="preview-bg" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="preview-content flex flex-col justify-end">
+              <div class="rounded-3xl bg-white/90 p-3">
+                <p class="text-xs font-black text-slate-500">洞察</p>
+                <div class="mt-3 flex items-end gap-2">
+                  <span class="h-9 flex-1 rounded-full bg-blue-500"></span>
+                  <span class="h-16 flex-1 rounded-full bg-emerald-400"></span>
+                  <span class="h-12 flex-1 rounded-full bg-violet-500"></span>
+                  <span class="h-20 flex-1 rounded-full bg-amber-400"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col justify-between py-2">
+            <div>
+              <i class="fa-solid fa-chart-simple mb-4 text-2xl text-violet-500"></i>
+              <h2 class="text-2xl font-black text-slate-950">洞察</h2>
+              <p class="mt-3 text-sm font-medium leading-6 text-slate-600">呈现专注时长、情绪趋势和课程进度，让用户看见真实变化。</p>
+            </div>
+            <span class="mt-5 text-sm font-black text-blue-600">查看页面 <i class="fa-solid fa-chevron-right ml-1"></i></span>
+          </div>
+        </a>
+
+        <a class="module-card flex gap-5 p-5" href="community.html">
+          <div class="preview-phone">
+            <div class="preview-island"></div>
+            <div class="preview-bg" style="background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="preview-content flex flex-col justify-end gap-2">
+              <div class="rounded-3xl bg-white/90 p-3">
+                <p class="text-xs font-black text-slate-500">共修小组</p>
+                <p class="mt-1 text-lg font-black leading-5">今晚 21:30<br />安静打卡</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col justify-between py-2">
+            <div>
+              <i class="fa-solid fa-users mb-4 text-2xl text-rose-500"></i>
+              <h2 class="text-2xl font-black text-slate-950">社群</h2>
+              <p class="mt-3 text-sm font-medium leading-6 text-slate-600">通过轻量共修、主题挑战和伙伴鼓励，降低独自坚持的摩擦。</p>
+            </div>
+            <span class="mt-5 text-sm font-black text-blue-600">查看页面 <i class="fa-solid fa-chevron-right ml-1"></i></span>
+          </div>
+        </a>
+
+        <a class="module-card flex gap-5 p-5" href="profile.html">
+          <div class="preview-phone">
+            <div class="preview-island"></div>
+            <div class="preview-bg" style="background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="preview-content flex flex-col justify-end">
+              <div class="rounded-3xl bg-white/90 p-3">
+                <p class="text-xs font-black text-slate-500">我的成长</p>
+                <p class="mt-1 text-lg font-black leading-5">连续打卡<br />21 天</p>
+                <div class="mt-3 flex -space-x-2">
+                  <span class="h-7 w-7 rounded-full bg-blue-500 ring-2 ring-white"></span>
+                  <span class="h-7 w-7 rounded-full bg-emerald-400 ring-2 ring-white"></span>
+                  <span class="h-7 w-7 rounded-full bg-amber-400 ring-2 ring-white"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex min-w-0 flex-1 flex-col justify-between py-2">
+            <div>
+              <i class="fa-solid fa-user-astronaut mb-4 text-2xl text-slate-700"></i>
+              <h2 class="text-2xl font-black text-slate-950">我的</h2>
+              <p class="mt-3 text-sm font-medium leading-6 text-slate-600">承载个人档案、成就、收藏、通知设置和会员权益。</p>
+            </div>
+            <span class="mt-5 text-sm font-black text-blue-600">查看页面 <i class="fa-solid fa-chevron-right ml-1"></i></span>
+          </div>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

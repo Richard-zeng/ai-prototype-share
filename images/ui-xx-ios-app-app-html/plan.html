@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XX 计划</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="phone-wrap">
+      <section class="phone-shell">
+        <div class="app-screen">
+          <div class="status-bar">
+            <span>9:41</span>
+            <div class="dynamic-island"></div>
+            <span class="flex items-center gap-1"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-three-quarters"></i></span>
+          </div>
+
+          <div class="app-content">
+            <header class="mb-5 flex items-center justify-between">
+              <div>
+                <p class="text-sm font-black text-slate-500">本周节奏</p>
+                <h1 class="mt-1 text-3xl font-black text-slate-950">把目标拆成可完成的日程</h1>
+              </div>
+              <button class="icon-button" data-action="done" aria-label="新增"><i class="fa-solid fa-plus"></i></button>
+            </header>
+
+            <section class="page-hero">
+              <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=900&q=85" alt="计划本和日历" />
+              <div class="hero-copy">
+                <h2 class="text-3xl font-black leading-tight">五月第二周</h2>
+                <p class="mt-2 text-sm font-bold leading-6 text-white/85">重点：稳定作息、输出方案、保持运动。</p>
+              </div>
+            </section>
+
+            <section class="glass-panel -mt-6 mx-3 p-4 relative z-10">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-xs font-black text-slate-500">周目标完成</p>
+                  <p class="mt-1 text-2xl font-black">5 / 8</p>
+                </div>
+                <button class="secondary-button" data-action="checkin"><i class="fa-solid fa-check"></i>打卡</button>
+              </div>
+              <div class="mt-4 progress-bar"><span style="width: 63%;"></span></div>
+            </section>
+
+            <section class="mt-6 soft-card p-5">
+              <div class="mb-4 flex items-center justify-between">
+                <h2 class="text-xl font-black">一周视图</h2>
+                <span class="text-sm font-black text-slate-500">5月7日</span>
+              </div>
+              <div class="grid grid-cols-7 gap-2 text-center">
+                <div class="rounded-2xl bg-slate-100 py-3"><p class="text-xs font-black text-slate-500">一</p><p class="mt-2 font-black">4</p></div>
+                <div class="rounded-2xl bg-blue-500 py-3 text-white"><p class="text-xs font-black text-white/80">二</p><p class="mt-2 font-black">5</p></div>
+                <div class="rounded-2xl bg-emerald-400 py-3 text-white"><p class="text-xs font-black text-white/80">三</p><p class="mt-2 font-black">6</p></div>
+                <div class="rounded-2xl bg-slate-950 py-3 text-white"><p class="text-xs font-black text-white/80">四</p><p class="mt-2 font-black">7</p></div>
+                <div class="rounded-2xl bg-slate-100 py-3"><p class="text-xs font-black text-slate-500">五</p><p class="mt-2 font-black">8</p></div>
+                <div class="rounded-2xl bg-slate-100 py-3"><p class="text-xs font-black text-slate-500">六</p><p class="mt-2 font-black">9</p></div>
+                <div class="rounded-2xl bg-slate-100 py-3"><p class="text-xs font-black text-slate-500">日</p><p class="mt-2 font-black">10</p></div>
+              </div>
+            </section>
+
+            <section class="mt-6 space-y-3">
+              <article class="soft-card flex items-center gap-4 p-4">
+                <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-600"><i class="fa-solid fa-laptop-code"></i></span>
+                <div class="min-w-0 flex-1">
+                  <h3 class="font-black">完成产品原型复盘</h3>
+                  <p class="mt-1 text-sm font-medium text-slate-500">今天 16:00 前 · 高优先级</p>
+                </div>
+                <button class="icon-button !h-10 !w-10 !rounded-2xl" data-action="done" aria-label="完成"><i class="fa-solid fa-check"></i></button>
+              </article>
+              <article class="soft-card flex items-center gap-4 p-4">
+                <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600"><i class="fa-solid fa-person-running"></i></span>
+                <div class="min-w-0 flex-1">
+                  <h3 class="font-black">晚间快走 30 分钟</h3>
+                  <p class="mt-1 text-sm font-medium text-slate-500">和情绪记录一起完成</p>
+                </div>
+                <button class="icon-button !h-10 !w-10 !rounded-2xl" data-action="done" aria-label="完成"><i class="fa-solid fa-check"></i></button>
+              </article>
+            </section>
+          </div>
+
+          <nav class="bottom-tab" style="--tabs: 6;">
+            <a class="tab-item" href="today.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+            <a class="tab-item" href="courses.html"><i class="fa-solid fa-book-open"></i><span>课程</span></a>
+            <a class="tab-item active" href="plan.html"><i class="fa-solid fa-calendar"></i><span>计划</span></a>
+            <a class="tab-item" href="insights.html"><i class="fa-solid fa-chart-simple"></i><span>洞察</span></a>
+            <a class="tab-item" href="community.html"><i class="fa-solid fa-users"></i><span>社群</span></a>
+            <a class="tab-item" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <div class="floating-toast" data-toast></div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>诗栖 - 收藏</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body class="prototype-screen">
+    <div class="app-screen">
+      <div class="status-bar">
+        <span>9:41</span>
+        <div class="dynamic-island"></div>
+        <div class="status-icons">
+          <i class="fa-solid fa-signal"></i>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-three-quarters"></i>
+        </div>
+      </div>
+
+      <header class="nav-bar">
+        <div>
+          <h1 class="nav-title">收藏</h1>
+          <div class="nav-subtitle">诗单、笔记与离线内容</div>
+        </div>
+        <div class="nav-actions">
+          <button class="icon-button" aria-label="新增诗单"><i class="fa-solid fa-plus"></i></button>
+        </div>
+      </header>
+
+      <main class="screen-content">
+        <section
+          class="image-card light-overlay p-5 min-h-[170px]"
+          style="--image: url('https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=900&q=80')"
+        >
+          <div class="flex justify-between items-start">
+            <span class="pill dark">私人书架</span>
+            <span class="pill dark">已离线 42 首</span>
+          </div>
+          <h2 class="serif mt-10 text-[28px] font-bold">夜读长安</h2>
+          <p class="mt-2 text-sm text-white/82">月、酒、归途、故人</p>
+        </section>
+
+        <section class="metric-grid mt-4">
+          <div class="metric"><strong>126</strong><span>收藏诗词</span></div>
+          <div class="metric"><strong>38</strong><span>私人笔记</span></div>
+          <div class="metric"><strong>9</strong><span>诗单</span></div>
+        </section>
+
+        <div class="segmented mt-5">
+          <button class="segment active">收藏</button>
+          <button class="segment">笔记</button>
+          <button class="segment">下载</button>
+        </div>
+
+        <section class="section-title">
+          <h2>最近收藏</h2>
+          <span>编辑</span>
+        </section>
+        <div class="space-y-3">
+          <article class="soft-card p-4">
+            <div class="flex justify-between gap-3">
+              <div>
+                <strong class="serif text-xl">将进酒</strong>
+                <p class="mini-label mt-1">李白 · 唐</p>
+              </div>
+              <button class="icon-button active" data-favorite aria-label="收藏"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <p class="mt-3 text-[14px] leading-6 text-[#51483f]">君不见黄河之水天上来，奔流到海不复回。</p>
+          </article>
+          <article class="soft-card p-4">
+            <div class="flex justify-between gap-3">
+              <div>
+                <strong class="serif text-xl">水调歌头</strong>
+                <p class="mini-label mt-1">苏轼 · 宋</p>
+              </div>
+              <button class="icon-button active" data-favorite aria-label="收藏"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <p class="mt-3 text-[14px] leading-6 text-[#51483f]">但愿人长久，千里共婵娟。</p>
+          </article>
+          <article class="soft-card p-4">
+            <div class="flex justify-between gap-3">
+              <div>
+                <strong class="serif text-xl">声声慢</strong>
+                <p class="mini-label mt-1">李清照 · 宋</p>
+              </div>
+              <button class="icon-button active" data-favorite aria-label="收藏"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <p class="mt-3 text-[14px] leading-6 text-[#51483f]">寻寻觅觅，冷冷清清，凄凄惨惨戚戚。</p>
+          </article>
+        </div>
+      </main>
+
+      <nav class="tab-bar" aria-label="主导航">
+        <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+        <a class="tab-item" href="discover.html"><i class="fa-solid fa-compass"></i><span>发现</span></a>
+        <a class="tab-item" href="practice.html"><i class="fa-solid fa-pen-nib"></i><span>练习</span></a>
+        <a class="tab-item active" href="library.html"><i class="fa-solid fa-book-bookmark"></i><span>收藏</span></a>
+        <a class="tab-item" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+      </nav>
+      <div class="home-indicator"></div>
+    </div>
+  </body>
+</html>

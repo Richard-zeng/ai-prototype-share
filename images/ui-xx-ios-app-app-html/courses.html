@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XX 课程</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="phone-wrap">
+      <section class="phone-shell">
+        <div class="app-screen">
+          <div class="status-bar">
+            <span>9:41</span>
+            <div class="dynamic-island"></div>
+            <span class="flex items-center gap-1"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-three-quarters"></i></span>
+          </div>
+
+          <div class="app-content">
+            <header class="mb-5 flex items-center justify-between">
+              <div>
+                <p class="text-sm font-black text-slate-500">学习路径</p>
+                <h1 class="mt-1 text-3xl font-black text-slate-950">为当下状态选择练习</h1>
+              </div>
+              <button class="icon-button" data-action="save" aria-label="收藏"><i class="fa-regular fa-bookmark"></i></button>
+            </header>
+
+            <section class="page-hero">
+              <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=900&q=85" alt="桌边阅读的人" />
+              <div class="hero-copy">
+                <h2 class="text-3xl font-black leading-tight">深度工作入门</h2>
+                <p class="mt-2 text-sm font-bold leading-6 text-white/85">7 节微课，把注意力重新带回手上的事情。</p>
+                <div class="mt-4 flex items-center gap-3">
+                  <button class="primary-button !bg-white !text-slate-950" data-action="start"><i class="fa-solid fa-play"></i>继续学习</button>
+                  <span class="text-sm font-black">已学 42%</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="mt-6 segmented" style="--segments: 3;" data-segment-group>
+              <button class="segment active" data-segment data-message="已切换到推荐课程">推荐</button>
+              <button class="segment" data-segment data-message="已切换到情绪课程">情绪</button>
+              <button class="segment" data-segment data-message="已切换到效率课程">效率</button>
+            </section>
+
+            <section class="mt-6 grid grid-cols-2 gap-3">
+              <article class="soft-card overflow-hidden">
+                <img class="h-28 w-full object-cover" src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=500&q=80" alt="安静冥想" />
+                <div class="p-4">
+                  <p class="text-xs font-black text-blue-600">今日推荐</p>
+                  <h3 class="mt-1 text-base font-black leading-5">十分钟情绪复位</h3>
+                  <p class="mt-2 text-xs font-bold text-slate-500">5 节 · 初阶</p>
+                </div>
+              </article>
+              <article class="soft-card overflow-hidden">
+                <img class="h-28 w-full object-cover" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=500&q=80" alt="明亮工作区" />
+                <div class="p-4">
+                  <p class="text-xs font-black text-emerald-600">效率训练</p>
+                  <h3 class="mt-1 text-base font-black leading-5">低干扰工作法</h3>
+                  <p class="mt-2 text-xs font-bold text-slate-500">6 节 · 进阶</p>
+                </div>
+              </article>
+            </section>
+
+            <section class="mt-6 soft-card p-5">
+              <div class="mb-4 flex items-center justify-between">
+                <h2 class="text-xl font-black">继续学习</h2>
+                <button class="secondary-button" data-expand="#课程详情"><i class="fa-solid fa-list-check"></i>章节</button>
+              </div>
+              <div class="space-y-4">
+                <button class="flex w-full items-center gap-4 text-left" data-action="start">
+                  <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-600"><i class="fa-solid fa-headphones"></i></span>
+                  <span class="min-w-0 flex-1">
+                    <span class="block font-black">第 4 节：进入心流前的准备</span>
+                    <span class="mt-1 block text-sm font-medium text-slate-500">音频 8 分钟 · 含一份练习卡</span>
+                  </span>
+                  <i class="fa-solid fa-chevron-right text-slate-400"></i>
+                </button>
+                <div class="progress-bar"><span style="width: 42%;"></span></div>
+                <div id="课程详情" class="hidden rounded-2xl bg-slate-100/80 p-4 text-sm font-bold leading-6 text-slate-600">
+                  本课程包含目标清理、环境设置、注意力启动、专注复盘四个主题，适合在工作日前 15 分钟完成。
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <nav class="bottom-tab" style="--tabs: 6;">
+            <a class="tab-item" href="today.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+            <a class="tab-item active" href="courses.html"><i class="fa-solid fa-book-open"></i><span>课程</span></a>
+            <a class="tab-item" href="plan.html"><i class="fa-solid fa-calendar"></i><span>计划</span></a>
+            <a class="tab-item" href="insights.html"><i class="fa-solid fa-chart-simple"></i><span>洞察</span></a>
+            <a class="tab-item" href="community.html"><i class="fa-solid fa-users"></i><span>社群</span></a>
+            <a class="tab-item" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <div class="floating-toast" data-toast></div>
+    <script src="app.js"></script>
+  </body>
+</html>

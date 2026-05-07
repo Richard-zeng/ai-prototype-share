@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>死了么 - 骑手接单</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="app-body">
+    <main class="app-screen dark">
+      <div class="statusbar">
+        <span data-now>09:41</span>
+        <span class="dynamic-island"></span>
+        <span class="signal-icons"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-three-quarters"></i></span>
+      </div>
+
+      <header class="topbar">
+        <div>
+          <h1>赛博收尸骑手</h1>
+          <span class="sub">专业、体面、不多问</span>
+        </div>
+        <button class="icon-btn" aria-label="上线状态"><i class="fa-solid fa-power-off text-[#7ff0c6]"></i></button>
+      </header>
+
+      <section class="content">
+        <section class="relative h-[240px] overflow-hidden rounded-[8px] border border-white/10 bg-cover bg-center" style="background-image: linear-gradient(180deg, rgba(16,24,22,0.22), rgba(16,24,22,0.95)), url('https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&w=900&q=80');">
+          <div class="absolute left-4 top-4 flex gap-2">
+            <span class="pill text-[#8df0c8]"><i class="fa-solid fa-circle"></i> 接单中</span>
+            <span class="pill">附近 6 单</span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4">
+            <div class="grid grid-cols-3 gap-2">
+              <div class="rounded-[8px] bg-white/10 p-3 text-center">
+                <strong class="block text-xl font-black">4.9</strong>
+                <span class="meta">安静指数</span>
+              </div>
+              <div class="rounded-[8px] bg-white/10 p-3 text-center">
+                <strong class="block text-xl font-black">12</strong>
+                <span class="meta">今日接单</span>
+              </div>
+              <div class="rounded-[8px] bg-white/10 p-3 text-center">
+                <strong class="block text-xl font-black">¥666</strong>
+                <span class="meta">小目标</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <span>附近急单</span>
+          <span class="meta">按距离排序</span>
+        </section>
+
+        <section class="card p-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <span class="pill text-[#ffdca8]"><i class="fa-solid fa-bolt"></i> 高优先级</span>
+              <div class="mt-3 text-xl font-black">疑似永久离线确认</div>
+              <p class="meta mt-2">滨江快乐独居小区 · 3.2km · 门锁 18 小时无活动</p>
+            </div>
+            <strong class="text-2xl font-black text-[#8df0c8]">¥199</strong>
+          </div>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="chip">需守护人授权</span>
+            <span class="chip">无宠物</span>
+            <span class="chip">电梯房</span>
+          </div>
+          <button class="btn-primary mt-4 w-full" data-toast-target="#rider-toast"><i class="fa-solid fa-motorcycle"></i> 接这单，轻点敲门</button>
+        </section>
+
+        <div id="rider-toast" class="fixed left-8 right-8 bottom-[98px] z-30 translate-y-3 rounded-full bg-white px-4 py-3 text-center text-sm font-extrabold text-[#17211d] opacity-0 pointer-events-none transition-all">
+          已接单，记得先打电话别直接破门
+        </div>
+
+        <section class="card px-4 mt-4">
+          <div class="list-row">
+            <div><strong>安全查看单</strong><span>只确认状态，不触碰隐私物品</span></div>
+            <span class="pill">¥39</span>
+          </div>
+          <div class="list-row">
+            <div><strong>联系不上升级单</strong><span>需守护人和物业双确认</span></div>
+            <span class="pill">¥89</span>
+          </div>
+          <div class="list-row">
+            <div><strong>体面善后协作</strong><span>对接正规机构，流程留痕</span></div>
+            <span class="pill">¥199+</span>
+          </div>
+        </section>
+      </section>
+
+      <nav class="tabbar" aria-label="骑手底部导航">
+        <a class="tab-item active" href="rider.html"><i class="fa-solid fa-motorcycle"></i><span>接单</span></a>
+        <a class="tab-item" href="alerts.html"><i class="fa-solid fa-route"></i><span>路上</span></a>
+        <a class="tab-item" href="community.html"><i class="fa-solid fa-comments"></i><span>工会</span></a>
+        <a class="tab-item" href="profile.html"><i class="fa-solid fa-id-badge"></i><span>我的</span></a>
+      </nav>
+    </main>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>闪映 · 拍摄</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body class="prototype-body">
+  <div class="device-frame" role="img" aria-label="iPhone 15 原型外框">
+    <main class="device-screen screen-dark">
+      <div class="status-bar" aria-hidden="true">
+        <span class="js-time">9:41</span>
+        <span class="status-icons"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><span class="battery"></span></span>
+      </div>
+
+      <section class="absolute inset-0">
+        <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=82" alt="拍摄预览画面">
+        <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.54),transparent_30%,rgba(0,0,0,0.68)_100%)]"></div>
+      </section>
+
+      <section class="page relative">
+        <header class="top-nav">
+          <a class="icon-circle" href="home.html" aria-label="关闭拍摄"><i class="fa-solid fa-xmark"></i></a>
+          <div class="rounded-full bg-black/32 px-4 py-2 text-sm font-black backdrop-blur-xl" data-record-label>准备开拍</div>
+          <a class="btn-secondary h-10 min-h-0 px-4" href="editor.html" aria-label="进入剪辑">下一步</a>
+        </header>
+
+        <aside class="absolute right-4 top-[112px] z-10 grid gap-3" aria-label="拍摄工具">
+          <button class="icon-circle" type="button" data-toast="已切换镜头" aria-label="切换镜头"><i class="fa-solid fa-camera-rotate"></i></button>
+          <button class="icon-circle" type="button" data-toggle data-toast="美颜已切换" aria-pressed="false" aria-label="美颜"><i class="fa-solid fa-face-smile"></i></button>
+          <button class="icon-circle" type="button" data-toggle data-toast="自动字幕已切换" aria-pressed="true" aria-label="自动字幕"><i class="fa-solid fa-closed-captioning"></i></button>
+          <button class="icon-circle" type="button" data-toast="已打开倒计时" aria-label="倒计时"><i class="fa-solid fa-stopwatch"></i></button>
+        </aside>
+
+        <div class="absolute left-4 top-[118px] z-10 grid gap-2">
+          <button class="pill bg-white text-[#07111f]" type="button" data-group="duration" aria-pressed="true">15 秒</button>
+          <button class="chip bg-black/24" type="button" data-group="duration" aria-pressed="false">60 秒</button>
+          <button class="chip bg-black/24" type="button" data-group="duration" aria-pressed="false">照片</button>
+        </div>
+
+        <div class="absolute bottom-[92px] left-0 right-0 px-5">
+          <div class="mb-5 flex items-center justify-between rounded-[26px] bg-black/34 p-3 backdrop-blur-xl">
+            <button class="grid gap-1 text-center text-xs font-bold text-white" type="button" data-toast="已打开特效">
+              <span class="grid h-12 w-12 place-items-center overflow-hidden rounded-2xl bg-white/14"><img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=82" alt=""></span>
+              特效
+            </button>
+            <button class="relative grid h-[76px] w-[76px] place-items-center rounded-full border-[5px] border-white bg-white/20" type="button" data-record aria-pressed="false" aria-label="录制">
+              <span class="grid h-[54px] w-[54px] place-items-center rounded-full bg-[#ff3d71] text-[0px] text-white">录制</span>
+            </button>
+            <button class="grid gap-1 text-center text-xs font-bold text-white" type="button" data-toast="已打开素材库">
+              <span class="grid h-12 w-12 place-items-center rounded-2xl bg-white/14"><i class="fa-solid fa-images text-lg"></i></span>
+              相册
+            </button>
+          </div>
+
+          <div class="grid grid-cols-4 gap-2 text-center text-xs font-extrabold">
+            <button class="chip justify-center bg-white text-[#07111f]" data-group="speed" aria-pressed="true" type="button">1x</button>
+            <button class="chip justify-center bg-black/28" data-group="speed" aria-pressed="false" type="button">0.5x</button>
+            <button class="chip justify-center bg-black/28" data-group="speed" aria-pressed="false" type="button">2x</button>
+            <button class="chip justify-center bg-black/28" data-group="speed" aria-pressed="false" type="button">模板</button>
+          </div>
+        </div>
+      </section>
+
+      <nav class="tab-bar" aria-label="主导航">
+        <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>首页</span></a>
+        <a class="tab-item" href="discover.html"><i class="fa-solid fa-magnifying-glass"></i><span>发现</span></a>
+        <a class="tab-create" href="create.html" aria-current="page" aria-label="创作"><i class="fa-solid fa-plus"></i></a>
+        <a class="tab-item" href="inbox.html"><i class="fa-solid fa-inbox"></i><span>消息</span></a>
+        <a class="tab-item" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+      </nav>
+    </main>
+  </div>
+  <script src="prototype.js"></script>
+</body>
+</html>

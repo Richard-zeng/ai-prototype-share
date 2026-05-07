@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA Todo - Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="prototype-page">
+  <div class="phone">
+    <div class="dynamic-island"></div>
+    <div class="status-bar">
+      <span data-status-time>9:41</span>
+      <div class="status-icons">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+      </div>
+    </div>
+
+    <main class="app-content">
+      <header class="top-chrome">
+        <div>
+          <p class="caption">ACCOUNT</p>
+          <h1 class="page-title">我的</h1>
+        </div>
+        <button class="icon-button" aria-label="设置">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </header>
+
+      <section class="black-panel p-5">
+        <div class="flex items-center gap-4">
+          <img class="h-20 w-20 rounded-[28px] object-cover border-2 border-white/18" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=240&q=80" alt="User portrait">
+          <div>
+            <p class="m-0 text-[24px] leading-tight font-black">Mia Chen</p>
+            <p class="mt-2 text-[12px] font-bold text-white/58">Product Lead · Shanghai</p>
+            <div class="mt-3 flex gap-2">
+              <span class="tag-chip tag-lime">Pro</span>
+              <span class="tag-chip">8 天连胜</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-2 mt-4">
+        <article class="metric-card panel">
+          <p class="metric-value">92%</p>
+          <p class="metric-label">本周准时完成率</p>
+        </article>
+        <article class="metric-card panel">
+          <p class="metric-value">18h</p>
+          <p class="metric-label">深度工作累计</p>
+        </article>
+      </section>
+
+      <section class="section-heading">
+        <h2>偏好设置</h2>
+      </section>
+
+      <section class="panel p-4">
+        <div class="toggle-row">
+          <div class="flex items-center gap-3">
+            <span class="h-10 w-10 rounded-[16px] bg-[#cdfc4f] text-[#11130f] flex items-center justify-center">
+              <i class="fa-solid fa-bell"></i>
+            </span>
+            <div>
+              <p class="m-0 text-[14px] font-black">智能提醒</p>
+              <p class="mt-1 text-[12px] font-bold text-[#70746d]">按精力和截止时间推送</p>
+            </div>
+          </div>
+          <div class="switch on"></div>
+        </div>
+        <div class="toggle-row">
+          <div class="flex items-center gap-3">
+            <span class="h-10 w-10 rounded-[16px] bg-[#121316] text-white flex items-center justify-center">
+              <i class="fa-solid fa-moon"></i>
+            </span>
+            <div>
+              <p class="m-0 text-[14px] font-black">夜间外观</p>
+              <p class="mt-1 text-[12px] font-bold text-[#70746d]">22:00 自动切换</p>
+            </div>
+          </div>
+          <div class="switch"></div>
+        </div>
+        <div class="toggle-row !border-b-0">
+          <div class="flex items-center gap-3">
+            <span class="h-10 w-10 rounded-[16px] bg-[rgba(91,140,255,0.18)] text-[#315fc8] flex items-center justify-center">
+              <i class="fa-solid fa-calendar-check"></i>
+            </span>
+            <div>
+              <p class="m-0 text-[14px] font-black">日历同步</p>
+              <p class="mt-1 text-[12px] font-bold text-[#70746d]">Google Calendar</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-chevron-right text-[#9ca397]"></i>
+        </div>
+      </section>
+
+      <section class="section-heading">
+        <h2>任务系统</h2>
+      </section>
+
+      <section class="panel p-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="m-0 text-[15px] font-black">今日默认容量</p>
+            <p class="mt-1 text-[12px] font-bold text-[#70746d]">6 个主要任务</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button class="h-9 w-9 rounded-full border-0 bg-[#eef2e7]" aria-label="减少">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <span class="text-[16px] font-black">6</span>
+            <button class="h-9 w-9 rounded-full border-0 bg-[#121316] text-white" aria-label="增加">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="tab-bar" aria-label="底部导航">
+      <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+      <a class="tab-item" href="inbox.html"><i class="fa-solid fa-inbox"></i><span>收件</span></a>
+      <a class="tab-item" href="project.html"><i class="fa-solid fa-layer-group"></i><span>项目</span></a>
+      <a class="tab-item" href="calendar.html"><i class="fa-regular fa-calendar"></i><span>日历</span></a>
+      <a class="tab-item active" href="profile.html"><i class="fa-regular fa-user"></i><span>我的</span></a>
+    </nav>
+    <div class="home-indicator"></div>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

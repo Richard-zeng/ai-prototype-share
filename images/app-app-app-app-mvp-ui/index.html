@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>闪映短视频 App · 高保真原型总览</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    :root {
+      --ink: #07111f;
+      --muted: #5c697c;
+      --line: rgba(15, 23, 42, 0.1);
+      --cyan: #21d4e8;
+      --rose: #ff3d71;
+      --paper: #f8fafc;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", sans-serif;
+      background: #edf2f8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; }
+
+    .hero {
+      padding: 48px clamp(20px, 5vw, 72px) 28px;
+      background:
+        linear-gradient(135deg, rgba(33, 212, 232, 0.2), transparent 36%),
+        linear-gradient(315deg, rgba(255, 61, 113, 0.15), transparent 40%),
+        #f8fafc;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+      gap: 32px;
+      align-items: end;
+    }
+
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      color: #07111f;
+      background: linear-gradient(135deg, #ffffff, #bff8ff);
+      box-shadow: 0 14px 32px rgba(33, 212, 232, 0.22);
+    }
+
+    .brief-grid {
+      max-width: 1180px;
+      margin: 28px auto 0;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .brief-card,
+    .source-card,
+    .screen-card {
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.08);
+    }
+
+    .brief-card {
+      padding: 18px;
+    }
+
+    .brief-card h3,
+    .source-card h3,
+    .screen-card h2 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .brief-card p,
+    .brief-card li,
+    .source-card li {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .brief-card ul,
+    .source-card ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+
+    .tokens {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .swatch {
+      min-height: 58px;
+      border-radius: 18px;
+      padding: 10px;
+      display: flex;
+      align-items: end;
+      font-size: 11px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .gallery {
+      padding: 34px clamp(16px, 4vw, 54px) 56px;
+    }
+
+    .gallery-head {
+      max-width: 1180px;
+      margin: 0 auto 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: end;
+    }
+
+    .screen-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 24px;
+      align-items: start;
+    }
+
+    .screen-card {
+      padding: 18px;
+      overflow: hidden;
+    }
+
+    .screen-card iframe {
+      width: 100%;
+      height: 940px;
+      border: 0;
+      border-radius: 28px;
+      background: #e8edf5;
+    }
+
+    .screen-meta {
+      min-height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .open-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 36px;
+      border-radius: 999px;
+      padding: 0 12px;
+      background: #07111f;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .source-card {
+      max-width: 1180px;
+      margin: 0 auto 26px;
+      padding: 20px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-inner,
+      .brief-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .screen-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="mb-5 flex items-center gap-3">
+          <span class="brand-mark"><i class="fa-solid fa-bolt"></i></span>
+          <span class="text-xl font-black">闪映 Short Video MVP</span>
+        </div>
+        <h1 class="m-0 max-w-4xl text-5xl font-black leading-[1.03] tracking-[0px]">短视频 App 高保真原型图与开发交付稿</h1>
+        <p class="mt-5 max-w-3xl text-base leading-7 text-slate-600">本原型面向 18-34 岁高频短视频用户和成长型创作者，覆盖推荐流、发现、拍摄、剪辑、评论、消息、个人主页、设置与首次引导。所有 App 界面均按 iPhone 15 逻辑尺寸 393 × 852 设计，并使用独立 HTML 文件承载。</p>
+      </div>
+      <div class="source-card">
+        <h3>产品结论</h3>
+        <ul>
+          <li>核心交互：打开即进入个性化推荐流，垂直滑动消费内容，右侧操作栏完成关注、喜欢、评论、收藏、分享。</li>
+          <li>创作链路：拍摄入口常驻底部中位，支持多段录制、特效、速度、自动字幕、编辑时间线和草稿发布。</li>
+          <li>用户痛点：算法疲劳、内容安全、创作门槛、评论压力、找不到细分兴趣和无字幕观看障碍。</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="brief-grid" aria-label="产品规划摘要">
+      <article class="brief-card">
+        <h3>用户体验分析</h3>
+        <ul>
+          <li>看视频用户需要更快进入沉浸流，同时保留“为什么推荐”和内容偏好控制。</li>
+          <li>创作者需要低成本拍摄、自动字幕、模板、草稿、数据反馈和评论保护。</li>
+          <li>新用户需要用兴趣选择缩短冷启动，不先暴露复杂创作后台。</li>
+        </ul>
+      </article>
+      <article class="brief-card">
+        <h3>竞品分析</h3>
+        <ul>
+          <li>TikTok 优点是 For You 推荐和偏好管理成熟，风险是用户容易感到不可控。</li>
+          <li>Instagram Reels 强在社交关系、Explore 和音频/特效生态，创作工具入口清晰。</li>
+          <li>YouTube Shorts 强在长内容生态和创作工具，适合把草稿、版权和发布设置做得更完整。</li>
+        </ul>
+      </article>
+      <article class="brief-card">
+        <h3>MVP 功能优先级</h3>
+        <ul>
+          <li>P0：引导兴趣、推荐流、基础互动、发现、拍摄、剪辑、发布草稿、个人页。</li>
+          <li>P1：创作者收件箱、评论保护、推荐偏好、屏幕时间、自动字幕。</li>
+          <li>P2：AI 初剪、品牌合作、直播、分层创作者数据和更细的安全策略。</li>
+        </ul>
+      </article>
+      <article class="brief-card">
+        <h3>设计系统</h3>
+        <p>深色沉浸流配合浅色管理页，使用高对比文本、44px 以上触控目标、圆角 18-30px、系统字体和 FontAwesome 图标。</p>
+        <div class="tokens" aria-label="色彩令牌">
+          <span class="swatch" style="background:#07111f">Ink</span>
+          <span class="swatch" style="background:#21d4e8;color:#07111f">Cyan</span>
+          <span class="swatch" style="background:#ff3d71">Rose</span>
+          <span class="swatch" style="background:#ffcc47;color:#07111f">Amber</span>
+        </div>
+      </article>
+    </section>
+  </header>
+
+  <main class="gallery">
+    <section class="source-card" aria-label="迭代计划与调研依据">
+      <h3>迭代计划与调研依据</h3>
+      <ul>
+        <li>第 1 周：完成静态原型、信息架构、基础 Design Token；第 2-3 周：接入登录、视频列表、播放状态和互动 API；第 4 周：拍摄/上传、草稿与编辑流程；第 5 周：评论保护、偏好设置、无障碍与数据埋点；第 6 周：灰度测试与推荐策略优化。</li>
+        <li>调研参考：<a href="https://support.tiktok.com/en/using-tiktok/exploring-videos/for-you">TikTok For You 与偏好管理</a>、<a href="https://about.fb.com/news/2020/08/introducing-instagram-reels/">Instagram Reels 创作/发现机制</a>、<a href="https://support.google.com/youtube/answer/10343433?hl=en">YouTube Shorts 创作工具</a>、<a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.1050214/full">短视频使用场景与用户参与研究</a>。</li>
+      </ul>
+    </section>
+
+    <div class="gallery-head">
+      <div>
+        <h2 class="m-0 text-3xl font-black">原型页面平铺展示</h2>
+        <p class="m-0 mt-2 text-sm text-slate-600">每个 iframe 均指向独立 HTML 文件，可单独打开给开发或评审使用。</p>
+      </div>
+    </div>
+
+    <section class="screen-grid" aria-label="高保真 App 页面">
+      <article class="screen-card">
+        <div class="screen-meta"><h2>01 引导与兴趣选择</h2><a class="open-link" href="onboarding.html">打开 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <iframe src="onboarding.html" title="引导与兴趣选择"></iframe>
+      </article>
+      <article class="screen-card">
+        <div class="screen-meta"><h2>02 首页推荐流</h2><a class="open-link" href="home.html">打开 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <iframe src="home.html" title="首页推荐流"></iframe>
+      </article>
+      <article class="screen-card">
+        <div class="screen-meta"><h2>03 发现与搜索</h2><a class="open-link" href="discover.html">打开 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <iframe src="discover.html" title="发现与搜索"></iframe>
+      </article>
+      <article class="screen-card">
+        <div class="screen-meta"><h2>04 拍摄创作</h2><a class="open-link" href="create.html">打开 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <iframe src="create.html" title="拍摄创作"></iframe>
+      </article>
+      <article class="screen-card">
+        <div class="screen-meta"><h2>05 剪辑编辑</h2><a class="open-link" href="editor.html">打开 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <iframe src="editor.html" title="剪辑编辑"></iframe>
+      </article>
+      <article class="screen-card">
+        <div class="screen-meta"><h2>06 评论详情</h2><a class="open-link" href="video-detail.html">打开 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <iframe src="video-detail.html" title="评论详情"></iframe>
+      </article>
+      <article class="screen-card">
+        <div class="screen-meta"><h2>07 消息中心</h2><a class="open-link" href="inbox.html">打开 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <iframe src="inbox.html" title="消息中心"></iframe>
+      </article>
+      <article class="screen-card">
+        <div class="screen-meta"><h2>08 个人主页</h2><a class="open-link" href="profile.html">打开 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <iframe src="profile.html" title="个人主页"></iframe>
+      </article>
+      <article class="screen-card">
+        <div class="screen-meta"><h2>09 设置与安全</h2><a class="open-link" href="settings.html">打开 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        <iframe src="settings.html" title="设置与安全"></iframe>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

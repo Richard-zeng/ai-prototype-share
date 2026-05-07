@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>死了么 - 我的</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="app-body">
+    <main class="app-screen">
+      <div class="statusbar">
+        <span data-now>09:41</span>
+        <span class="dynamic-island"></span>
+        <span class="signal-icons"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-three-quarters"></i></span>
+      </div>
+
+      <header class="topbar">
+        <div>
+          <h1>我的</h1>
+          <span class="sub">活着是一种订阅</span>
+        </div>
+        <button class="icon-btn" aria-label="设置"><i class="fa-solid fa-gear"></i></button>
+      </header>
+
+      <section class="content">
+        <section class="card p-4">
+          <div class="flex items-center gap-4">
+            <img class="h-[72px] w-[72px] rounded-full object-cover ring-4 ring-emerald-100" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=220&q=80" alt="用户头像" />
+            <div class="min-w-0 flex-1">
+              <div class="text-xl font-black">一只还活着的 90 后</div>
+              <p class="meta mt-1">杭州 · 独居 · 续命 17 天</p>
+              <div class="mt-2 flex gap-2">
+                <span class="chip">轻微社恐</span>
+                <span class="chip">夜猫子</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="soft-band mt-4 p-4">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <span class="pill bg-white/70"><i class="fa-solid fa-crown text-[#ffb84c]"></i> 体面会员</span>
+              <div class="title-lg mt-3">孤独防沉默 Pro</div>
+              <p class="muted mt-2 text-[13px] font-semibold">多设备监测、守护人轮询、骑手优先接单。</p>
+            </div>
+            <strong class="text-2xl font-black text-[#ff6f61]">¥9.9</strong>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <span>守护配置</span>
+          <span class="meta">建议完善</span>
+        </section>
+
+        <section class="card px-4">
+          <div class="list-row">
+            <div><strong>紧急联系人</strong><span>3 位亲友，1 位物业联系人</span></div>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </div>
+          <div class="list-row">
+            <div><strong>家门定位</strong><span>已保存，只给授权骑手看</span></div>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </div>
+          <div class="list-row">
+            <div><strong>打卡时间</strong><span>每日 21:30，别晚到阴间时区</span></div>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </div>
+          <div class="list-row">
+            <div><strong>隐私边界</strong><span>不开门、不翻柜、不评价房间</span></div>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <span>设备同步</span>
+          <span class="pill bg-emerald-50 text-emerald-700">2 台在线</span>
+        </section>
+
+        <section class="grid grid-cols-2 gap-3">
+          <div class="card p-4">
+            <i class="fa-solid fa-mobile-screen-button text-2xl text-emerald-600"></i>
+            <strong class="mt-3 block text-sm font-black">手机</strong>
+            <span class="meta">刚刚动过</span>
+          </div>
+          <div class="card p-4">
+            <i class="fa-solid fa-heart-pulse text-2xl text-[#ff6f61]"></i>
+            <strong class="mt-3 block text-sm font-black">手环</strong>
+            <span class="meta">心率 76</span>
+          </div>
+        </section>
+      </section>
+
+      <nav class="tabbar" aria-label="底部导航">
+        <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>首页</span></a>
+        <a class="tab-item" href="checkin.html"><i class="fa-solid fa-heart-pulse"></i><span>报平安</span></a>
+        <a class="tab-item" href="alerts.html"><i class="fa-solid fa-bell"></i><span>预警</span></a>
+        <a class="tab-item active" href="profile.html"><i class="fa-solid fa-user-astronaut"></i><span>我的</span></a>
+      </nav>
+    </main>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>诗栖 - 发现</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body class="prototype-screen">
+    <div class="app-screen">
+      <div class="status-bar">
+        <span>9:41</span>
+        <div class="dynamic-island"></div>
+        <div class="status-icons">
+          <i class="fa-solid fa-signal"></i>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-three-quarters"></i>
+        </div>
+      </div>
+
+      <header class="nav-bar">
+        <div>
+          <h1 class="nav-title">发现</h1>
+          <div class="nav-subtitle">按意象、朝代、诗人探索</div>
+        </div>
+        <div class="nav-actions">
+          <button class="icon-button" aria-label="扫码"><i class="fa-solid fa-qrcode"></i></button>
+        </div>
+      </header>
+
+      <main class="screen-content">
+        <label class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input value="李白 月 夜" aria-label="搜索诗词" />
+          <i class="fa-solid fa-sliders"></i>
+        </label>
+
+        <div class="chip-row mt-4">
+          <button class="chip active">唐诗</button>
+          <button class="chip">宋词</button>
+          <button class="chip">山水</button>
+          <button class="chip">边塞</button>
+          <button class="chip">思乡</button>
+          <button class="chip">咏物</button>
+        </div>
+
+        <section
+          class="image-card light-overlay mt-2 p-5 min-h-[180px] flex flex-col justify-end"
+          style="--image: url('https://images.unsplash.com/photo-1528164344705-47542687000d?auto=format&fit=crop&w=900&q=80')"
+        >
+          <span class="pill dark w-fit">新诗单</span>
+          <h2 class="serif mt-3 text-[28px] font-bold leading-tight">雨后江南</h2>
+          <p class="mt-2 text-sm text-white/82">烟柳、石桥、晚钟与归舟</p>
+        </section>
+
+        <section class="section-title">
+          <h2>分类</h2>
+          <span>全部 64 类</span>
+        </section>
+        <div class="grid grid-cols-2 gap-3">
+          <article class="solid-card p-4">
+            <div class="avatar !rounded-[18px] !bg-[#f2ded7] !text-[var(--cinnabar)]"><i class="fa-solid fa-moon"></i></div>
+            <strong class="block mt-4">月与夜</strong>
+            <span class="mini-label mt-1 block">426 首</span>
+          </article>
+          <article class="solid-card p-4">
+            <div class="avatar !rounded-[18px]"><i class="fa-solid fa-mountain-sun"></i></div>
+            <strong class="block mt-4">山水田园</strong>
+            <span class="mini-label mt-1 block">583 首</span>
+          </article>
+          <article class="solid-card p-4">
+            <div class="avatar !rounded-[18px] !bg-[#e3e8ef] !text-[var(--blue-ink)]"><i class="fa-solid fa-drum"></i></div>
+            <strong class="block mt-4">边塞军旅</strong>
+            <span class="mini-label mt-1 block">198 首</span>
+          </article>
+          <article class="solid-card p-4">
+            <div class="avatar !rounded-[18px] !bg-[#f1e5c9] !text-[#89672b]"><i class="fa-solid fa-leaf"></i></div>
+            <strong class="block mt-4">花木草虫</strong>
+            <span class="mini-label mt-1 block">352 首</span>
+          </article>
+        </div>
+
+        <section class="section-title">
+          <h2>热门诗人</h2>
+          <span>本周</span>
+        </section>
+        <div class="space-y-3">
+          <article class="row-card">
+            <div class="avatar">李</div>
+            <div class="row-main"><strong>李白</strong><span>浪漫、月色、行旅 · 1,012 万次阅读</span></div>
+            <i class="fa-solid fa-chevron-right text-[var(--soft)]"></i>
+          </article>
+          <article class="row-card">
+            <div class="avatar !bg-[#f2ded7] !text-[var(--cinnabar)]">苏</div>
+            <div class="row-main"><strong>苏轼</strong><span>豪放、人生、赤壁 · 896 万次阅读</span></div>
+            <i class="fa-solid fa-chevron-right text-[var(--soft)]"></i>
+          </article>
+        </div>
+      </main>
+
+      <nav class="tab-bar" aria-label="主导航">
+        <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+        <a class="tab-item active" href="discover.html"><i class="fa-solid fa-compass"></i><span>发现</span></a>
+        <a class="tab-item" href="practice.html"><i class="fa-solid fa-pen-nib"></i><span>练习</span></a>
+        <a class="tab-item" href="library.html"><i class="fa-solid fa-book-bookmark"></i><span>收藏</span></a>
+        <a class="tab-item" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+      </nav>
+      <div class="home-indicator"></div>
+    </div>
+  </body>
+</html>

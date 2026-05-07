@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA Todo - Inbox</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="prototype-page">
+  <div class="phone">
+    <div class="dynamic-island"></div>
+    <div class="status-bar">
+      <span data-status-time>9:41</span>
+      <div class="status-icons">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+      </div>
+    </div>
+
+    <main class="app-content">
+      <header class="top-chrome">
+        <div>
+          <p class="caption">CAPTURE</p>
+          <h1 class="page-title">收件箱</h1>
+        </div>
+        <button class="icon-button" aria-label="语音输入">
+          <i class="fa-solid fa-microphone-lines"></i>
+        </button>
+      </header>
+
+      <section class="input-shell">
+        <textarea aria-label="任务输入" placeholder="把脑袋里的事倒进来...">周五前确认供应商报价，并把预算差异发给 Mina</textarea>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <span class="tag-chip tag-lime"><i class="fa-regular fa-calendar mr-1"></i> 周五</span>
+          <span class="tag-chip tag-blue"><i class="fa-solid fa-briefcase mr-1"></i> Finance</span>
+          <span class="tag-chip tag-coral"><i class="fa-solid fa-arrow-up mr-1"></i> P1</span>
+        </div>
+      </section>
+
+      <div class="mt-4 grid grid-cols-3 gap-2">
+        <button class="ghost-button"><i class="fa-solid fa-camera"></i>拍照</button>
+        <button class="ghost-button"><i class="fa-solid fa-link"></i>链接</button>
+        <button class="ghost-button"><i class="fa-solid fa-at"></i>指派</button>
+      </div>
+
+      <section class="section-heading">
+        <h2>待整理</h2>
+        <button>批处理</button>
+      </section>
+
+      <div class="stack">
+        <article class="panel p-4">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="m-0 text-[15px] leading-snug font-black">把 Q2 目标拆成三条可执行任务</p>
+              <p class="mt-2 text-[12px] leading-5 font-semibold text-[#70746d]">来自 Slack · 12分钟前</p>
+            </div>
+            <span class="tag-chip tag-lime">AI 已解析</span>
+          </div>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="tag-chip">3 个子任务</span>
+            <span class="tag-chip tag-blue">Strategy</span>
+            <span class="tag-chip">本周</span>
+          </div>
+        </article>
+
+        <article class="panel p-4">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <p class="m-0 text-[15px] leading-snug font-black">给 Alex 发送新版登录页截图</p>
+              <p class="mt-2 text-[12px] leading-5 font-semibold text-[#70746d]">iOS 分享菜单 · 28分钟前</p>
+            </div>
+            <button class="h-9 w-9 rounded-full border-0 bg-[#121316] text-white" aria-label="完成">
+              <i class="fa-solid fa-check"></i>
+            </button>
+          </div>
+          <div class="mt-4 flex gap-2">
+            <span class="tag-chip tag-coral">今天 18:00</span>
+            <span class="tag-chip">Design</span>
+          </div>
+        </article>
+
+        <article class="black-panel p-4">
+          <div class="flex items-center gap-3">
+            <div class="h-12 w-12 rounded-[18px] bg-[#cdfc4f] text-[#11130f] flex items-center justify-center">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div>
+              <p class="m-0 text-[15px] font-black">Inbox Zero</p>
+              <p class="mt-1 text-[12px] leading-5 text-white/60 font-semibold">还剩 7 条未归档，建议先处理高优先级。</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <button class="floating-action" data-open-sheet="#captureSheet" aria-label="新建捕获">
+      <i class="fa-solid fa-pen text-[18px]"></i>
+    </button>
+
+    <div class="sheet-backdrop" data-sheet-backdrop></div>
+    <section class="bottom-sheet" id="captureSheet" aria-label="捕获任务">
+      <div class="flex items-center justify-between">
+        <h2 class="m-0 text-[19px] font-black">智能捕获</h2>
+        <button class="icon-button !h-9 !w-9 !bg-[#eef2e7]" data-close-sheet aria-label="关闭">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <textarea class="field mt-4 !h-[96px] !py-3" aria-label="输入任务">下周一之前整理发布会嘉宾名单</textarea>
+      <button class="primary-button lime mt-4 w-full">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        解析并保存
+      </button>
+    </section>
+
+    <nav class="tab-bar" aria-label="底部导航">
+      <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+      <a class="tab-item active" href="inbox.html"><i class="fa-solid fa-inbox"></i><span>收件</span></a>
+      <a class="tab-item" href="project.html"><i class="fa-solid fa-layer-group"></i><span>项目</span></a>
+      <a class="tab-item" href="calendar.html"><i class="fa-regular fa-calendar"></i><span>日历</span></a>
+      <a class="tab-item" href="profile.html"><i class="fa-regular fa-user"></i><span>我的</span></a>
+    </nav>
+    <div class="home-indicator"></div>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

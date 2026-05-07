@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA Todo - Focus</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="prototype-page">
+  <div class="phone phone-photo">
+    <img class="absolute inset-0 h-full w-full object-cover opacity-80" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=80" alt="Mountain night">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/34 via-black/62 to-black/92"></div>
+    <div class="dynamic-island"></div>
+    <div class="status-bar">
+      <span data-status-time>9:41</span>
+      <div class="status-icons">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+      </div>
+    </div>
+
+    <main class="app-content">
+      <header class="top-chrome">
+        <a class="icon-button" href="task-detail.html" aria-label="关闭专注">
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+        <button class="icon-button" aria-label="声音">
+          <i class="fa-solid fa-wave-square"></i>
+        </button>
+      </header>
+
+      <section class="mt-8 text-center">
+        <p class="caption">FOCUS SESSION</p>
+        <h1 class="mt-4 mb-0 text-[68px] leading-none font-black">42:18</h1>
+        <p class="mt-4 text-[14px] leading-6 font-bold text-white/66">产品原型审阅 · 50m</p>
+      </section>
+
+      <section class="mt-8 mx-auto h-[214px] w-[214px] rounded-full p-[13px]" style="background: conic-gradient(#cdfc4f 0 64%, rgba(255,255,255,0.18) 64% 100%);">
+        <div class="h-full w-full rounded-full bg-black/48 backdrop-blur-xl flex flex-col items-center justify-center border border-white/10">
+          <i class="fa-solid fa-moon text-[28px] text-[#cdfc4f]"></i>
+          <p class="mt-5 mb-0 text-[16px] font-black">深度模式</p>
+          <p class="mt-2 mb-0 text-[12px] font-bold text-white/52">通知已静音</p>
+        </div>
+      </section>
+
+      <section class="mt-8 grid grid-cols-3 gap-3">
+        <button class="h-[72px] rounded-[26px] border border-white/10 bg-white/10 text-white backdrop-blur-xl">
+          <i class="fa-solid fa-pause text-[20px]"></i>
+          <span class="mt-2 block text-[11px] font-black">暂停</span>
+        </button>
+        <button class="h-[72px] rounded-[26px] border-0 bg-[#cdfc4f] text-[#11130f]">
+          <i class="fa-solid fa-check text-[20px]"></i>
+          <span class="mt-2 block text-[11px] font-black">完成</span>
+        </button>
+        <button class="h-[72px] rounded-[26px] border border-white/10 bg-white/10 text-white backdrop-blur-xl">
+          <i class="fa-solid fa-forward-step text-[20px]"></i>
+          <span class="mt-2 block text-[11px] font-black">跳过</span>
+        </button>
+      </section>
+
+      <section class="mt-5 rounded-[30px] border border-white/10 bg-white/10 p-4 backdrop-blur-xl">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="m-0 text-[14px] font-black">会后自动动作</p>
+            <p class="mt-1 text-[12px] font-bold text-white/58">生成复盘提醒和未完成子任务</p>
+          </div>
+          <div class="switch on"></div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="tab-bar" aria-label="底部导航">
+      <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+      <a class="tab-item" href="inbox.html"><i class="fa-solid fa-inbox"></i><span>收件</span></a>
+      <a class="tab-item active" href="project.html"><i class="fa-solid fa-layer-group"></i><span>项目</span></a>
+      <a class="tab-item" href="calendar.html"><i class="fa-regular fa-calendar"></i><span>日历</span></a>
+      <a class="tab-item" href="profile.html"><i class="fa-regular fa-user"></i><span>我的</span></a>
+    </nav>
+    <div class="home-indicator"></div>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

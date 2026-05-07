@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA Todo - Calendar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="prototype-page">
+  <div class="phone">
+    <div class="dynamic-island"></div>
+    <div class="status-bar">
+      <span data-status-time>9:41</span>
+      <div class="status-icons">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+      </div>
+    </div>
+
+    <main class="app-content">
+      <header class="top-chrome">
+        <div>
+          <p class="caption">MAY 2026</p>
+          <h1 class="page-title">日历</h1>
+        </div>
+        <button class="icon-button" aria-label="新增日程">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </header>
+
+      <section class="grid grid-cols-7 gap-2">
+        <div class="panel-tight py-3 text-center">
+          <p class="m-0 text-[10px] font-black text-[#70746d]">一</p>
+          <p class="mt-1 text-[18px] font-black">4</p>
+        </div>
+        <div class="panel-tight py-3 text-center">
+          <p class="m-0 text-[10px] font-black text-[#70746d]">二</p>
+          <p class="mt-1 text-[18px] font-black">5</p>
+        </div>
+        <div class="panel-tight py-3 text-center">
+          <p class="m-0 text-[10px] font-black text-[#70746d]">三</p>
+          <p class="mt-1 text-[18px] font-black">6</p>
+        </div>
+        <div class="py-3 text-center rounded-[22px] bg-[#121316] text-white">
+          <p class="m-0 text-[10px] font-black text-white/60">四</p>
+          <p class="mt-1 text-[18px] font-black">7</p>
+        </div>
+        <div class="panel-tight py-3 text-center">
+          <p class="m-0 text-[10px] font-black text-[#70746d]">五</p>
+          <p class="mt-1 text-[18px] font-black">8</p>
+        </div>
+        <div class="panel-tight py-3 text-center">
+          <p class="m-0 text-[10px] font-black text-[#70746d]">六</p>
+          <p class="mt-1 text-[18px] font-black">9</p>
+        </div>
+        <div class="panel-tight py-3 text-center">
+          <p class="m-0 text-[10px] font-black text-[#70746d]">日</p>
+          <p class="mt-1 text-[18px] font-black">10</p>
+        </div>
+      </section>
+
+      <section class="section-heading">
+        <h2>时间块</h2>
+        <span class="tag-chip tag-lime">已排 78%</span>
+      </section>
+
+      <section class="calendar-grid">
+        <div class="time-rail pt-2">
+          <span>09:00</span>
+          <span>10:00</span>
+          <span>11:00</span>
+          <span>12:00</span>
+          <span>14:00</span>
+          <span>15:00</span>
+          <span>16:00</span>
+        </div>
+        <div class="day-rail">
+          <article class="event-block bg-[#121316] text-white">
+            <strong>团队晨会</strong>
+            <span class="!text-white/60">09:15 - 09:45 · Meeting</span>
+          </article>
+          <article class="event-block" style="background:#cdfc4f;">
+            <strong>发布会边界梳理</strong>
+            <span>10:00 - 10:40 · Focus</span>
+          </article>
+          <article class="event-block">
+            <strong>供应商报价确认</strong>
+            <span>11:20 - 12:00 · Finance</span>
+          </article>
+          <article class="event-block" style="background:rgba(91,140,255,0.18);">
+            <strong>产品原型审阅</strong>
+            <span>14:30 - 15:20 · Design</span>
+          </article>
+          <article class="event-block" style="background:rgba(255,104,72,0.16);">
+            <strong>给财务发送清单</strong>
+            <span>17:30 · Due today</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <nav class="tab-bar" aria-label="底部导航">
+      <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+      <a class="tab-item" href="inbox.html"><i class="fa-solid fa-inbox"></i><span>收件</span></a>
+      <a class="tab-item" href="project.html"><i class="fa-solid fa-layer-group"></i><span>项目</span></a>
+      <a class="tab-item active" href="calendar.html"><i class="fa-regular fa-calendar"></i><span>日历</span></a>
+      <a class="tab-item" href="profile.html"><i class="fa-regular fa-user"></i><span>我的</span></a>
+    </nav>
+    <div class="home-indicator"></div>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

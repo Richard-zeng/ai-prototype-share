@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>诗栖 - 练习</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body class="prototype-screen">
+    <div class="app-screen">
+      <div class="status-bar">
+        <span>9:41</span>
+        <div class="dynamic-island"></div>
+        <div class="status-icons">
+          <i class="fa-solid fa-signal"></i>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-three-quarters"></i>
+        </div>
+      </div>
+
+      <header class="nav-bar">
+        <div>
+          <h1 class="nav-title">练习</h1>
+          <div class="nav-subtitle">背诵、听写、意象辨析</div>
+        </div>
+        <div class="nav-actions">
+          <button class="icon-button" aria-label="排行榜"><i class="fa-solid fa-ranking-star"></i></button>
+        </div>
+      </header>
+
+      <main class="screen-content">
+        <section class="ink-card p-5">
+          <div class="flex items-center justify-between">
+            <div>
+              <div class="mini-label !text-white/68">本月记诵</div>
+              <strong class="block mt-1 text-[31px] leading-none">28 首</strong>
+            </div>
+            <div class="w-[72px] h-[72px] rounded-[24px] bg-white/14 grid place-items-center text-[28px]">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+          </div>
+          <div class="mt-5 grid grid-cols-7 gap-2">
+            <span class="h-8 rounded-xl bg-white/20 grid place-items-center text-xs">一</span>
+            <span class="h-8 rounded-xl bg-white/20 grid place-items-center text-xs">二</span>
+            <span class="h-8 rounded-xl bg-white/90 text-[var(--jade)] grid place-items-center text-xs font-bold">三</span>
+            <span class="h-8 rounded-xl bg-white/20 grid place-items-center text-xs">四</span>
+            <span class="h-8 rounded-xl bg-white/20 grid place-items-center text-xs">五</span>
+            <span class="h-8 rounded-xl bg-white/20 grid place-items-center text-xs">六</span>
+            <span class="h-8 rounded-xl bg-white/20 grid place-items-center text-xs">日</span>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <h2>听写挑战</h2>
+          <span>第 2 题 / 5</span>
+        </section>
+        <section class="solid-card p-5">
+          <div class="mini-label">补全诗句</div>
+          <div class="poem-lines small mt-4">
+            明月松间照<br />
+            清泉石上流<br />
+            <span class="inline-block min-w-[126px] border-b-2 border-dashed border-[var(--cinnabar)] text-transparent">竹喧归浣女</span><br />
+            莲动下渔舟
+          </div>
+          <div class="mt-5 grid gap-3">
+            <button class="answer" data-answer="wrong">云深不知处</button>
+            <button class="answer" data-answer="correct">竹喧归浣女</button>
+            <button class="answer" data-answer="wrong">花落知多少</button>
+          </div>
+          <div class="answer-note mt-3" data-answer-note></div>
+        </section>
+
+        <section class="section-title">
+          <h2>训练计划</h2>
+          <span>今天</span>
+        </section>
+        <div class="space-y-3">
+          <article class="row-card">
+            <div class="avatar !bg-[#f2ded7] !text-[var(--cinnabar)]"><i class="fa-solid fa-microphone-lines"></i></div>
+            <div class="row-main"><strong>朗诵 3 首</strong><span>声调节奏 · 已完成 1 首</span></div>
+            <span class="pill">34%</span>
+          </article>
+          <article class="row-card">
+            <div class="avatar"><i class="fa-solid fa-brain"></i></div>
+            <div class="row-main"><strong>错句复习</strong><span>来自近 7 天练习记录</span></div>
+            <span class="pill">8 句</span>
+          </article>
+        </div>
+      </main>
+
+      <nav class="tab-bar" aria-label="主导航">
+        <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+        <a class="tab-item" href="discover.html"><i class="fa-solid fa-compass"></i><span>发现</span></a>
+        <a class="tab-item active" href="practice.html"><i class="fa-solid fa-pen-nib"></i><span>练习</span></a>
+        <a class="tab-item" href="library.html"><i class="fa-solid fa-book-bookmark"></i><span>收藏</span></a>
+        <a class="tab-item" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+      </nav>
+      <div class="home-indicator"></div>
+    </div>
+  </body>
+</html>

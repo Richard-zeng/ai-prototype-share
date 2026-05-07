@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>闪映 · 个人主页</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body class="prototype-body">
+  <div class="device-frame" role="img" aria-label="iPhone 15 原型外框">
+    <main class="device-screen screen-light">
+      <div class="status-bar" aria-hidden="true">
+        <span class="js-time">9:41</span>
+        <span class="status-icons"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><span class="battery"></span></span>
+      </div>
+
+      <section class="page">
+        <header class="top-nav">
+          <button class="icon-circle" type="button" data-toast="已打开扫一扫" aria-label="扫一扫"><i class="fa-solid fa-qrcode"></i></button>
+          <h1 class="m-0 text-base font-black">@nora.city</h1>
+          <a class="icon-circle" href="settings.html" aria-label="设置"><i class="fa-solid fa-gear"></i></a>
+        </header>
+
+        <section class="mt-5 rounded-[30px] bg-[#07111f] p-5 text-white shadow-xl" aria-labelledby="profile-name">
+          <div class="flex items-start gap-4">
+            <img class="h-20 w-20 rounded-[28px] object-cover ring-4 ring-white/16" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=82" alt="Nora 头像">
+            <div class="min-w-0 flex-1">
+              <h2 id="profile-name" class="m-0 text-xl font-black">Nora Lin</h2>
+              <p class="m-0 mt-1 text-sm font-semibold text-slate-300">城市穿搭与通勤生活</p>
+              <div class="mt-3 flex gap-2">
+                <button class="btn-primary h-9 min-h-0 px-4 text-sm" type="button" data-toast="进入编辑资料">编辑资料</button>
+                <button class="btn-secondary h-9 min-h-0 px-3" type="button" data-toggle aria-pressed="false" data-toast="主页分享状态已切换" aria-label="分享主页"><i class="fa-solid fa-share"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 grid grid-cols-3 rounded-[24px] bg-white/10 p-3 text-center">
+            <div><strong class="block text-xl">128</strong><span class="text-xs text-slate-300">作品</span></div>
+            <div><strong class="block text-xl">68.5k</strong><span class="text-xs text-slate-300">粉丝</span></div>
+            <div><strong class="block text-xl">1.8M</strong><span class="text-xs text-slate-300">获赞</span></div>
+          </div>
+        </section>
+
+        <section class="mt-4 grid grid-cols-2 gap-3" aria-label="创作者数据">
+          <article class="paper-panel p-4">
+            <div class="flex items-center justify-between">
+              <h2 class="m-0 text-sm font-black">本周播放</h2>
+              <i class="fa-solid fa-arrow-trend-up text-[#45d483]"></i>
+            </div>
+            <p class="m-0 mt-3 text-2xl font-black">924k</p>
+            <p class="m-0 text-xs font-bold text-slate-500">较上周 +18%</p>
+          </article>
+          <article class="paper-panel p-4">
+            <div class="flex items-center justify-between">
+              <h2 class="m-0 text-sm font-black">完播率</h2>
+              <i class="fa-solid fa-gauge-high text-[#21a9bb]"></i>
+            </div>
+            <p class="m-0 mt-3 text-2xl font-black">61%</p>
+            <p class="m-0 text-xs font-bold text-slate-500">15 秒视频最佳</p>
+          </article>
+        </section>
+
+        <div class="mt-5 grid grid-cols-3 gap-2 rounded-full bg-slate-200 p-1" role="tablist" aria-label="个人内容分类">
+          <button class="rounded-full bg-white py-2 text-sm font-black shadow-sm" data-group="profile-tab" aria-pressed="true" type="button">作品</button>
+          <button class="rounded-full py-2 text-sm font-black text-slate-500" data-group="profile-tab" aria-pressed="false" type="button">收藏</button>
+          <button class="rounded-full py-2 text-sm font-black text-slate-500" data-group="profile-tab" aria-pressed="false" type="button">喜欢</button>
+        </div>
+
+        <section class="thumb-grid mt-3" aria-label="个人作品网格">
+          <article class="thumb rounded-l-[18px]"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=360&q=82" alt="夜市穿搭视频封面"><span class="thumb-stat"><i class="fa-solid fa-play"></i> 2.3M</span></article>
+          <article class="thumb"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=360&q=82" alt="街拍视频封面"><span class="thumb-stat"><i class="fa-solid fa-play"></i> 920k</span></article>
+          <article class="thumb rounded-r-[18px]"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=360&q=82" alt="居家短片封面"><span class="thumb-stat"><i class="fa-solid fa-play"></i> 518k</span></article>
+        </section>
+      </section>
+
+      <nav class="tab-bar" aria-label="主导航">
+        <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>首页</span></a>
+        <a class="tab-item" href="discover.html"><i class="fa-solid fa-magnifying-glass"></i><span>发现</span></a>
+        <a class="tab-create" href="create.html" aria-label="创作"><i class="fa-solid fa-plus"></i></a>
+        <a class="tab-item" href="inbox.html"><i class="fa-solid fa-inbox"></i><span>消息</span></a>
+        <a class="tab-item active" href="profile.html" aria-current="page"><i class="fa-solid fa-user"></i><span>我的</span></a>
+      </nav>
+    </main>
+  </div>
+  <script src="prototype.js"></script>
+</body>
+</html>

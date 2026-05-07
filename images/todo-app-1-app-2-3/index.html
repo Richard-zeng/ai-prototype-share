@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA Todo - High Fidelity Prototype</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="index-body">
+  <main class="index-shell">
+    <section>
+      <div class="inline-flex items-center gap-2 rounded-full bg-[#cdfc4f] px-4 py-2 text-[13px] font-black text-[#11130f]">
+        <i class="fa-solid fa-layer-group"></i>
+        iPhone 15 Pro · 393 x 852 · iframe prototype
+      </div>
+      <h1 class="index-title mt-5">NOVA Todo 高保真原型</h1>
+      <p class="index-lead">
+        用户需求聚焦在快速捕获、今日执行、项目推进、时间安排和专注完成。核心交互逻辑采用“收集 -> 归类 -> 排期 -> 专注 -> 复盘”的闭环，所有界面均以独立 HTML 文件实现，主入口仅通过 iframe 平铺展示，便于设计走查和开发拆分。
+      </p>
+    </section>
+
+    <section class="principle-grid" aria-label="产品与体验规划">
+      <article class="principle-card">
+        <h2>1. 用户体验分析</h2>
+        <p>高频用户需要少打字、少跳转、快决策。原型提供智能捕获、优先级标签、时间块、完成反馈和专注模式。</p>
+      </article>
+      <article class="principle-card">
+        <h2>2. 产品界面规划</h2>
+        <p>关键页面包含今日、收件箱、任务详情、项目、日历、专注、我的设置，覆盖 TODO App 的主要业务闭环。</p>
+      </article>
+      <article class="principle-card">
+        <h2>3. 高保真 UI 设计</h2>
+        <p>使用 iOS 状态栏、底部 Tab、圆角设备框、真实照片、FontAwesome 图标和现代任务卡片系统。</p>
+      </article>
+      <article class="principle-card">
+        <h2>4. 开发可用结构</h2>
+        <p>共享样式位于 assets/styles.css，轻量交互位于 assets/app.js，每个界面文件都可单独打开和迭代。</p>
+      </article>
+    </section>
+
+    <section class="prototype-grid" aria-label="原型界面平铺">
+      <article class="prototype-card">
+        <div class="prototype-label">
+          <span><i class="fa-solid fa-house mr-2"></i>home.html · 今日总览</span>
+          <span>执行入口</span>
+        </div>
+        <div class="device-shell">
+          <iframe src="home.html" title="今日总览"></iframe>
+        </div>
+      </article>
+
+      <article class="prototype-card">
+        <div class="prototype-label">
+          <span><i class="fa-solid fa-inbox mr-2"></i>inbox.html · 收件箱</span>
+          <span>快速捕获</span>
+        </div>
+        <div class="device-shell">
+          <iframe src="inbox.html" title="收件箱"></iframe>
+        </div>
+      </article>
+
+      <article class="prototype-card">
+        <div class="prototype-label">
+          <span><i class="fa-solid fa-list-check mr-2"></i>task-detail.html · 任务详情</span>
+          <span>执行拆解</span>
+        </div>
+        <div class="device-shell">
+          <iframe src="task-detail.html" title="任务详情"></iframe>
+        </div>
+      </article>
+
+      <article class="prototype-card">
+        <div class="prototype-label">
+          <span><i class="fa-solid fa-layer-group mr-2"></i>project.html · 项目看板</span>
+          <span>协作推进</span>
+        </div>
+        <div class="device-shell">
+          <iframe src="project.html" title="项目看板"></iframe>
+        </div>
+      </article>
+
+      <article class="prototype-card">
+        <div class="prototype-label">
+          <span><i class="fa-regular fa-calendar mr-2"></i>calendar.html · 日历排期</span>
+          <span>时间管理</span>
+        </div>
+        <div class="device-shell">
+          <iframe src="calendar.html" title="日历排期"></iframe>
+        </div>
+      </article>
+
+      <article class="prototype-card">
+        <div class="prototype-label">
+          <span><i class="fa-solid fa-moon mr-2"></i>focus.html · 专注模式</span>
+          <span>沉浸执行</span>
+        </div>
+        <div class="device-shell">
+          <iframe src="focus.html" title="专注模式"></iframe>
+        </div>
+      </article>
+
+      <article class="prototype-card">
+        <div class="prototype-label">
+          <span><i class="fa-regular fa-user mr-2"></i>profile.html · 我的设置</span>
+          <span>账户偏好</span>
+        </div>
+        <div class="device-shell">
+          <iframe src="profile.html" title="我的设置"></iframe>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>诗栖 - 我的</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body class="prototype-screen">
+    <div class="app-screen">
+      <div class="status-bar">
+        <span>9:41</span>
+        <div class="dynamic-island"></div>
+        <div class="status-icons">
+          <i class="fa-solid fa-signal"></i>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-three-quarters"></i>
+        </div>
+      </div>
+
+      <header class="nav-bar">
+        <div>
+          <h1 class="nav-title">我的</h1>
+          <div class="nav-subtitle">阅读气质与学习轨迹</div>
+        </div>
+        <div class="nav-actions">
+          <button class="icon-button" aria-label="设置" onclick="location.href='settings.html'"><i class="fa-solid fa-gear"></i></button>
+        </div>
+      </header>
+
+      <main class="screen-content">
+        <section class="ink-card p-5">
+          <div class="flex items-center gap-4">
+            <div class="w-[72px] h-[72px] rounded-[26px] bg-white/90 grid place-items-center text-[28px] text-[var(--cinnabar)] serif font-bold">清</div>
+            <div>
+              <strong class="block text-[22px]">清照同学</strong>
+              <span class="text-sm text-white/68">偏爱宋词 · 山水与月色</span>
+            </div>
+          </div>
+          <div class="metric-grid mt-5">
+            <div class="metric !bg-white/12 !border-white/10"><strong>12</strong><span class="!text-white/68">连续天数</span></div>
+            <div class="metric !bg-white/12 !border-white/10"><strong>318</strong><span class="!text-white/68">总阅读</span></div>
+            <div class="metric !bg-white/12 !border-white/10"><strong>46</strong><span class="!text-white/68">已背诵</span></div>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <h2>本周偏好</h2>
+          <span>自动生成</span>
+        </section>
+        <section class="solid-card p-4">
+          <div class="grid grid-cols-[88px_1fr] gap-4 items-center">
+            <div class="relative w-[88px] h-[88px] rounded-full bg-[#efe4cf] grid place-items-center">
+              <div class="absolute inset-2 rounded-full border-[10px] border-[var(--jade)] border-t-[var(--cinnabar)] border-r-[var(--gold)]"></div>
+              <span class="relative serif font-bold">词心</span>
+            </div>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between mini-label"><span>山水</span><span>42%</span></div>
+                <div class="progress-track mt-1"><div class="progress-fill" style="--progress: 42%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between mini-label"><span>怀古</span><span>28%</span></div>
+                <div class="progress-track mt-1"><div class="progress-fill" style="--progress: 28%; background: var(--cinnabar)"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between mini-label"><span>离别</span><span>18%</span></div>
+                <div class="progress-track mt-1"><div class="progress-fill" style="--progress: 18%; background: var(--gold)"></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <h2>徽章</h2>
+          <span>18 枚</span>
+        </section>
+        <div class="grid grid-cols-3 gap-3">
+          <div class="solid-card p-3 text-center">
+            <div class="avatar mx-auto !bg-[#f2ded7] !text-[var(--cinnabar)]"><i class="fa-solid fa-moon"></i></div>
+            <strong class="block mt-2 text-sm">月下客</strong>
+          </div>
+          <div class="solid-card p-3 text-center">
+            <div class="avatar mx-auto"><i class="fa-solid fa-seedling"></i></div>
+            <strong class="block mt-2 text-sm">山水友</strong>
+          </div>
+          <div class="solid-card p-3 text-center">
+            <div class="avatar mx-auto !bg-[#f1e5c9] !text-[#89672b]"><i class="fa-solid fa-scroll"></i></div>
+            <strong class="block mt-2 text-sm">百首录</strong>
+          </div>
+        </div>
+
+        <section class="section-title">
+          <h2>服务</h2>
+          <span></span>
+        </section>
+        <div class="solid-card px-4">
+          <div class="toggle-line">
+            <div><strong>学习报告</strong><div class="mini-label">每周一推送</div></div>
+            <i class="fa-solid fa-chevron-right text-[var(--soft)]"></i>
+          </div>
+          <div class="toggle-line">
+            <div><strong>会员雅集</strong><div class="mini-label">名家课与专属字帖</div></div>
+            <i class="fa-solid fa-chevron-right text-[var(--soft)]"></i>
+          </div>
+        </div>
+      </main>
+
+      <nav class="tab-bar" aria-label="主导航">
+        <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+        <a class="tab-item" href="discover.html"><i class="fa-solid fa-compass"></i><span>发现</span></a>
+        <a class="tab-item" href="practice.html"><i class="fa-solid fa-pen-nib"></i><span>练习</span></a>
+        <a class="tab-item" href="library.html"><i class="fa-solid fa-book-bookmark"></i><span>收藏</span></a>
+        <a class="tab-item active" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+      </nav>
+      <div class="home-indicator"></div>
+    </div>
+  </body>
+</html>

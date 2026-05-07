@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA Todo - Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="prototype-page">
+  <div class="phone">
+    <div class="dynamic-island"></div>
+    <div class="status-bar">
+      <span data-status-time>9:41</span>
+      <div class="status-icons">
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+      </div>
+    </div>
+
+    <main class="app-content">
+      <header class="top-chrome">
+        <div>
+          <p class="caption">PROJECT</p>
+          <h1 class="page-title">发布会战役</h1>
+        </div>
+        <button class="icon-button" aria-label="项目筛选">
+          <i class="fa-solid fa-sliders"></i>
+        </button>
+      </header>
+
+      <section class="photo-card p-5 flex flex-col justify-between">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80" alt="Team workspace">
+        <div class="flex items-center justify-between">
+          <span class="tag-chip tag-lime">8 天后发布</span>
+          <div class="flex -space-x-2">
+            <img class="h-8 w-8 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Member">
+            <img class="h-8 w-8 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=120&q=80" alt="Member">
+            <img class="h-8 w-8 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Member">
+          </div>
+        </div>
+        <div class="mt-14">
+          <h2 class="m-0 text-[25px] leading-tight font-black">Launch Sprint</h2>
+          <p class="mt-2 text-[12px] font-bold text-white/72">18 个任务 · 3 个阻塞 · 64% 完成</p>
+        </div>
+      </section>
+
+      <section class="section-heading">
+        <h2>项目视图</h2>
+      </section>
+
+      <div class="segmented" data-segment-group>
+        <button class="segment active" data-segment>看板</button>
+        <button class="segment" data-segment>列表</button>
+        <button class="segment" data-segment>里程碑</button>
+      </div>
+
+      <section class="mt-4 grid grid-cols-3 gap-2 pb-2">
+        <div class="panel-tight p-3 min-h-[276px]">
+          <div class="flex items-center justify-between">
+            <p class="m-0 text-[13px] font-black">To Do</p>
+            <span class="tag-chip !h-6 !px-2">5</span>
+          </div>
+          <article class="mt-3 rounded-[18px] bg-[#121316] p-3 text-white">
+            <p class="m-0 text-[12px] leading-snug font-black">确认活动页首屏视觉</p>
+            <p class="mt-3 text-[10px] font-bold text-white/52">今天</p>
+          </article>
+          <article class="mt-2 rounded-[18px] bg-white p-3">
+            <p class="m-0 text-[12px] leading-snug font-black">供应商报价二次确认</p>
+            <p class="mt-3 text-[10px] font-bold text-[#70746d]">周五</p>
+          </article>
+        </div>
+        <div class="panel-tight p-3 min-h-[276px]">
+          <div class="flex items-center justify-between">
+            <p class="m-0 text-[13px] font-black">Doing</p>
+            <span class="tag-chip tag-lime !h-6 !px-2">7</span>
+          </div>
+          <article class="mt-3 rounded-[18px] bg-[#cdfc4f] p-3 text-[#11130f]">
+            <p class="m-0 text-[12px] leading-snug font-black">发布前任务边界梳理</p>
+            <p class="mt-3 text-[10px] font-black">P1 · You</p>
+          </article>
+          <article class="mt-2 rounded-[18px] bg-white p-3">
+            <p class="m-0 text-[12px] leading-snug font-black">媒体名单去重</p>
+            <p class="mt-3 text-[10px] font-bold text-[#70746d]">Mina</p>
+          </article>
+        </div>
+        <div class="panel-tight p-3 min-h-[276px]">
+          <div class="flex items-center justify-between">
+            <p class="m-0 text-[13px] font-black">Done</p>
+            <span class="tag-chip tag-mint !h-6 !px-2">6</span>
+          </div>
+          <article class="mt-3 rounded-[18px] bg-white p-3 opacity-70">
+            <p class="m-0 text-[12px] leading-snug font-black">嘉宾接待 SOP</p>
+            <p class="mt-3 text-[10px] font-bold text-[#70746d]">已归档</p>
+          </article>
+          <article class="mt-2 rounded-[18px] bg-white p-3 opacity-70">
+            <p class="m-0 text-[12px] leading-snug font-black">直播间彩排预约</p>
+            <p class="mt-3 text-[10px] font-bold text-[#70746d]">已归档</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-heading">
+        <h2>阻塞项</h2>
+        <span class="tag-chip tag-coral">3</span>
+      </section>
+
+      <article class="task-row">
+        <button class="check-dot" data-task-toggle aria-label="解决阻塞">
+          <i class="fa-solid fa-check text-[12px]"></i>
+        </button>
+        <div>
+          <p class="task-title">场地确认邮件未回</p>
+          <p class="task-meta">Owner: Alex · 影响彩排时间</p>
+        </div>
+        <i class="fa-solid fa-triangle-exclamation text-[#ff6848]"></i>
+      </article>
+    </main>
+
+    <nav class="tab-bar" aria-label="底部导航">
+      <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+      <a class="tab-item" href="inbox.html"><i class="fa-solid fa-inbox"></i><span>收件</span></a>
+      <a class="tab-item active" href="project.html"><i class="fa-solid fa-layer-group"></i><span>项目</span></a>
+      <a class="tab-item" href="calendar.html"><i class="fa-regular fa-calendar"></i><span>日历</span></a>
+      <a class="tab-item" href="profile.html"><i class="fa-regular fa-user"></i><span>我的</span></a>
+    </nav>
+    <div class="home-indicator"></div>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

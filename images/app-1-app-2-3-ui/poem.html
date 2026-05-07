@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>诗栖 - 山居秋暝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body class="prototype-screen">
+    <div class="app-screen">
+      <div class="status-bar">
+        <span>9:41</span>
+        <div class="dynamic-island"></div>
+        <div class="status-icons">
+          <i class="fa-solid fa-signal"></i>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-three-quarters"></i>
+        </div>
+      </div>
+
+      <header class="nav-bar">
+        <button class="icon-button" aria-label="返回"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="nav-actions">
+          <button class="icon-button" data-favorite aria-label="收藏"><i class="fa-regular fa-heart"></i></button>
+          <button class="icon-button" aria-label="分享"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+        </div>
+      </header>
+
+      <main class="screen-content">
+        <section
+          class="image-card light-overlay p-5 min-h-[166px]"
+          style="--image: url('https://images.unsplash.com/photo-1744782793756-ef240aacfb30?auto=format&fit=crop&w=900&q=80')"
+        >
+          <span class="pill dark">王维 · 唐</span>
+          <h1 class="serif mt-8 text-[32px] font-bold leading-none">山居秋暝</h1>
+          <p class="mt-3 text-sm text-white/82">空山、新雨、晚秋与归人</p>
+        </section>
+
+        <section class="solid-card mt-4 p-5">
+          <div class="segmented" style="--segments: 4">
+            <button class="segment active">原文</button>
+            <button class="segment">注释</button>
+            <button class="segment">译文</button>
+            <button class="segment">赏析</button>
+          </div>
+
+          <div class="poem-lines mt-6 text-center" style="font-size: var(--reader-size, 26px)">
+            空山新雨后<br />
+            天气晚来秋<br />
+            明月松间照<br />
+            清泉石上流<br />
+            竹喧归浣女<br />
+            莲动下渔舟<br />
+            随意春芳歇<br />
+            王孙自可留
+          </div>
+
+          <div class="divider"></div>
+          <div class="audio-bar">
+            <button class="icon-button !bg-[var(--jade)] !text-white" data-play aria-label="播放"><i class="fa-solid fa-play"></i></button>
+            <div>
+              <div class="flex justify-between mini-label mb-2"><span>康震朗读</span><span>01:26</span></div>
+              <div class="progress-track"><div class="progress-fill"></div></div>
+            </div>
+            <button class="icon-button" aria-label="倍速">1.0x</button>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <h2>重点注释</h2>
+          <span>6 条</span>
+        </section>
+        <div class="space-y-3">
+          <article class="soft-card p-4">
+            <div class="mini-label">暝</div>
+            <p class="mt-2 text-[15px] leading-7">日落时分，山中雨后初晴，空气清澈，景物的层次更分明。</p>
+          </article>
+          <article class="soft-card p-4">
+            <div class="mini-label">王孙</div>
+            <p class="mt-2 text-[15px] leading-7">原指贵族子弟，此处也可理解为诗人自况，表达愿留山中的心境。</p>
+          </article>
+        </div>
+      </main>
+
+      <nav class="tab-bar" aria-label="主导航">
+        <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+        <a class="tab-item active" href="discover.html"><i class="fa-solid fa-compass"></i><span>发现</span></a>
+        <a class="tab-item" href="practice.html"><i class="fa-solid fa-pen-nib"></i><span>练习</span></a>
+        <a class="tab-item" href="library.html"><i class="fa-solid fa-book-bookmark"></i><span>收藏</span></a>
+        <a class="tab-item" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+      </nav>
+      <div class="home-indicator"></div>
+    </div>
+  </body>
+</html>

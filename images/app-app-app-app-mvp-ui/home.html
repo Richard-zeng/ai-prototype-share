@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>闪映 · 首页推荐流</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="shared.css">
+</head>
+<body class="prototype-body">
+  <div class="device-frame" role="img" aria-label="iPhone 15 原型外框">
+    <main class="device-screen screen-dark">
+      <div class="status-bar" aria-hidden="true">
+        <span class="js-time">9:41</span>
+        <span class="status-icons"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><span class="battery"></span></span>
+      </div>
+
+      <section class="feed-media" data-home-feed role="img" aria-label="短视频推荐画面">
+        <div class="absolute left-4 top-[58px] z-10 flex items-center gap-2">
+          <span class="grid h-9 w-9 place-items-center rounded-2xl bg-white text-[#07111f]"><i class="fa-solid fa-bolt"></i></span>
+        </div>
+        <div class="feed-tabs" role="tablist" aria-label="首页频道">
+          <button class="is-active" type="button" role="tab" aria-selected="true">推荐</button>
+          <button type="button" role="tab" aria-selected="false">关注</button>
+        </div>
+        <button class="icon-circle absolute right-4 top-[58px] z-10" type="button" data-toast="已打开直播入口" aria-label="打开直播">
+          <i class="fa-solid fa-tower-broadcast"></i>
+        </button>
+
+        <button class="absolute left-1/2 top-[112px] z-10 -translate-x-1/2 rounded-full bg-black/28 px-3 py-2 text-xs font-extrabold text-white backdrop-blur-md" type="button" data-feed-next aria-label="切换到下一条视频">
+          <i class="fa-solid fa-chevron-up mr-1"></i> 上滑切换
+        </button>
+
+        <aside class="action-rail" aria-label="视频操作">
+          <button class="action-btn" type="button" data-toggle data-toast="已关注创作者" aria-pressed="false" aria-label="关注创作者">
+            <img class="avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=240&q=82" alt="">
+            <span class="bubble -mt-5 h-6 w-6 bg-[#ff3d71] text-xs"><i class="fa-solid fa-plus text-[11px]"></i></span>
+          </button>
+          <button class="action-btn" type="button" data-toggle data-toast="喜欢已更新" aria-pressed="false" aria-label="喜欢视频">
+            <span class="bubble"><i class="fa-solid fa-heart"></i></span>
+            <span data-feed-likes>82.4k</span>
+          </button>
+          <a class="action-btn" href="video-detail.html" aria-label="打开评论">
+            <span class="bubble"><i class="fa-solid fa-comment-dots"></i></span>
+            <span data-feed-comments>1,246</span>
+          </a>
+          <button class="action-btn" type="button" data-toggle data-toast="已加入收藏夹" aria-pressed="false" aria-label="收藏视频">
+            <span class="bubble"><i class="fa-solid fa-bookmark"></i></span>
+            <span>收藏</span>
+          </button>
+          <button class="action-btn" type="button" data-toast="已打开分享面板" aria-label="分享视频">
+            <span class="bubble"><i class="fa-solid fa-share"></i></span>
+            <span>分享</span>
+          </button>
+        </aside>
+
+        <div class="caption-block">
+          <div class="mb-2 flex items-center gap-2 text-sm font-extrabold"><span data-feed-creator>@nora.city</span><span class="rounded-full bg-white/16 px-2 py-1 text-[11px]">创作者</span></div>
+          <h1 data-feed-title>30 秒夜市穿搭挑战</h1>
+          <p data-feed-text>三套通勤单品换出周末感。长按屏幕可暂停，向上滑看下一条。</p>
+          <div class="music-pill" aria-label="视频音乐">
+            <i class="fa-solid fa-compact-disc"></i>
+            <span data-feed-music>City pop loop - Nora remix</span>
+          </div>
+        </div>
+        <div class="progress-line" aria-hidden="true"><span></span></div>
+      </section>
+
+      <nav class="tab-bar" aria-label="主导航">
+        <a class="tab-item active" href="home.html" aria-current="page"><i class="fa-solid fa-house"></i><span>首页</span></a>
+        <a class="tab-item" href="discover.html"><i class="fa-solid fa-magnifying-glass"></i><span>发现</span></a>
+        <a class="tab-create" href="create.html" aria-label="创作"><i class="fa-solid fa-plus"></i></a>
+        <a class="tab-item" href="inbox.html"><i class="fa-solid fa-inbox"></i><span>消息</span></a>
+        <a class="tab-item" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+      </nav>
+    </main>
+  </div>
+  <script src="prototype.js"></script>
+</body>
+</html>

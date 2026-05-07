@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>死了么 - 社区</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="app-body">
+    <main class="app-screen">
+      <div class="statusbar">
+        <span data-now>09:41</span>
+        <span class="dynamic-island"></span>
+        <span class="signal-icons"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-three-quarters"></i></span>
+      </div>
+
+      <header class="topbar">
+        <div>
+          <h1>活人广场</h1>
+          <span class="sub">大家都还没下线</span>
+        </div>
+        <button class="icon-btn" aria-label="发布动态"><i class="fa-solid fa-plus"></i></button>
+      </header>
+
+      <section class="content">
+        <div class="segmented mb-4">
+          <span class="active">附近</span>
+          <span>同龄人</span>
+          <span>守护局</span>
+        </div>
+
+        <section class="image-card p-4 flex items-end" style="background-image: linear-gradient(180deg, rgba(251,255,249,0.08), rgba(251,255,249,0.92)), url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80');">
+          <div>
+            <span class="pill">今日话题</span>
+            <div class="title-lg mt-2">独居人的安全感，能不能像外卖一样准时？</div>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <span>附近活人动态</span>
+          <span class="meta">新鲜出炉</span>
+        </section>
+
+        <article class="card p-4">
+          <div class="flex items-center gap-3">
+            <img class="avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=140&q=80" alt="用户头像" />
+            <div>
+              <strong class="block text-sm font-black">可乐不加冰</strong>
+              <span class="meta">刚刚报平安 · 距你 1.8km</span>
+            </div>
+          </div>
+          <p class="mt-3 text-[14px] font-bold leading-relaxed">今天的存活证明：冰箱里还有半颗白菜，我和它总得活一个。</p>
+          <div class="mt-3 flex gap-2">
+            <button class="chip"><i class="fa-regular fa-face-laugh-squint"></i> 哈哈哈</button>
+            <button class="chip"><i class="fa-solid fa-hands-clapping"></i> 续上了</button>
+          </div>
+        </article>
+
+        <article class="card p-4 mt-3">
+          <div class="flex items-center gap-3">
+            <img class="avatar" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=140&q=80" alt="用户头像" />
+            <div>
+              <strong class="block text-sm font-black">卷不动一点</strong>
+              <span class="meta">守护人已认证 · 12 分钟前</span>
+            </div>
+          </div>
+          <p class="mt-3 text-[14px] font-bold leading-relaxed">我给朋友设置了“超过 24 小时没回就先发奶茶券”，事实证明，比报警有效。</p>
+          <div class="mt-3 h-[118px] rounded-[8px] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=800&q=80');"></div>
+        </article>
+
+        <section class="soft-band mt-3 p-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <strong class="block text-sm font-black">今晚 21:30 活人连麦</strong>
+              <span class="meta">主题：如何优雅地被发现还活着</span>
+            </div>
+            <button class="icon-btn" aria-label="加入"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </section>
+      </section>
+
+      <nav class="tabbar" aria-label="底部导航">
+        <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>首页</span></a>
+        <a class="tab-item" href="checkin.html"><i class="fa-solid fa-heart-pulse"></i><span>报平安</span></a>
+        <a class="tab-item active" href="community.html"><i class="fa-solid fa-comments"></i><span>广场</span></a>
+        <a class="tab-item" href="profile.html"><i class="fa-solid fa-user-astronaut"></i><span>我的</span></a>
+      </nav>
+    </main>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

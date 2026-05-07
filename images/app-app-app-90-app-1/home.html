@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>死了么 - 首页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="app-body">
+    <main class="app-screen">
+      <div class="statusbar">
+        <span data-now>09:41</span>
+        <span class="dynamic-island"></span>
+        <span class="signal-icons"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-three-quarters"></i></span>
+      </div>
+
+      <header class="topbar">
+        <div>
+          <h1>死了么</h1>
+          <span class="sub">躺平但别失联</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="icon-btn" aria-label="通知"><i class="fa-regular fa-bell"></i></button>
+          <img class="avatar" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=160&q=80" alt="用户头像" />
+        </div>
+      </header>
+
+      <section class="content">
+        <section class="image-card relative p-4 flex flex-col justify-between" style="background-image: linear-gradient(90deg, rgba(251,255,249,0.98), rgba(251,255,249,0.78), rgba(251,255,249,0.18)), url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=900&q=80');">
+          <div>
+            <div class="pill mb-3"><i class="fa-solid fa-seedling text-emerald-600"></i> 今日灵魂待确认</div>
+            <div class="title-xl max-w-[210px]">今天还活着吗？</div>
+            <p class="muted mt-2 text-[13px] font-semibold max-w-[215px]">每日一句，防止你在家悄悄进入永久离线。</p>
+          </div>
+          <button class="btn-primary w-[168px]" data-toast-target="#home-toast"><i class="fa-solid fa-heart-pulse"></i> 点我报平安</button>
+        </section>
+
+        <div id="home-toast" class="fixed left-8 right-8 bottom-[98px] z-30 translate-y-3 rounded-full bg-[#17211d] px-4 py-3 text-center text-sm font-extrabold text-white opacity-0 pointer-events-none transition-all">
+          已报平安，亲友群停止脑补大戏
+        </div>
+
+        <section class="section-title">
+          <span>今日状态</span>
+          <span class="meta">距离超时 03:18:42</span>
+        </section>
+
+        <section class="card p-4">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="meta">安全分</p>
+              <div class="mt-1 flex items-end gap-2">
+                <strong class="text-[34px] leading-none font-black">96</strong>
+                <span class="pb-1 text-xs font-extrabold text-emerald-700">还挺能活</span>
+              </div>
+            </div>
+            <span class="pill bg-emerald-50 text-emerald-700"><i class="fa-solid fa-circle-check"></i> 在线</span>
+          </div>
+          <div class="progress mt-4"><span style="width: 86%"></span></div>
+          <div class="mt-4 grid grid-cols-3 gap-2 text-center">
+            <div class="soft-band p-3">
+              <strong class="block text-lg font-black">17</strong>
+              <span class="meta">连活天数</span>
+            </div>
+            <div class="soft-band p-3">
+              <strong class="block text-lg font-black">3</strong>
+              <span class="meta">守护人</span>
+            </div>
+            <div class="soft-band p-3">
+              <strong class="block text-lg font-black">1</strong>
+              <span class="meta">社恐骑手</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <span>守护小队</span>
+          <span class="meta">已同步</span>
+        </section>
+
+        <section class="card px-4">
+          <div class="list-row">
+            <div class="flex items-center gap-3">
+              <img class="avatar sm" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=120&q=80" alt="联系人" />
+              <div><strong>老同学阿北</strong><span>超时 20 分钟后先戳你微信</span></div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </div>
+          <div class="list-row">
+            <div class="flex items-center gap-3">
+              <img class="avatar sm" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=120&q=80" alt="联系人" />
+              <div><strong>合租前任室友</strong><span>拥有备用钥匙，但没有八卦权</span></div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <span>本周存活打卡</span>
+          <span class="meta">6/7</span>
+        </section>
+        <div class="days">
+          <div class="day-dot on">一</div>
+          <div class="day-dot on">二</div>
+          <div class="day-dot on">三</div>
+          <div class="day-dot on">四</div>
+          <div class="day-dot warn">五</div>
+          <div class="day-dot on">六</div>
+          <div class="day-dot">日</div>
+        </div>
+      </section>
+
+      <nav class="tabbar" aria-label="底部导航">
+        <a class="tab-item active" href="home.html"><i class="fa-solid fa-house"></i><span>首页</span></a>
+        <a class="tab-item" href="checkin.html"><i class="fa-solid fa-heart-pulse"></i><span>报平安</span></a>
+        <a class="tab-item" href="alerts.html"><i class="fa-solid fa-bell"></i><span>预警</span></a>
+        <a class="tab-item" href="profile.html"><i class="fa-solid fa-user-astronaut"></i><span>我的</span></a>
+      </nav>
+    </main>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

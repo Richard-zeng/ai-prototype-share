@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XX 今日</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="phone-wrap">
+      <section class="phone-shell">
+        <div class="app-screen">
+          <div class="status-bar">
+            <span>9:41</span>
+            <div class="dynamic-island"></div>
+            <span class="flex items-center gap-1"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-three-quarters"></i></span>
+          </div>
+
+          <div class="app-content">
+            <header class="mb-5 flex items-center justify-between">
+              <div>
+                <p class="text-sm font-black text-slate-500">早上好，林夏</p>
+                <h1 class="mt-1 text-3xl font-black text-slate-950">今天从 12 分钟开始</h1>
+              </div>
+              <button class="icon-button" data-action="sync" aria-label="刷新"><i class="fa-solid fa-rotate"></i></button>
+            </header>
+
+            <section class="page-hero">
+              <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=900&q=85" alt="清晨山间阳光" />
+              <div class="hero-copy">
+                <div class="mb-3 flex gap-2">
+                  <span class="chip"><i class="fa-solid fa-leaf"></i>平静</span>
+                  <span class="chip"><i class="fa-solid fa-bolt"></i>能量 76</span>
+                </div>
+                <h2 class="text-3xl font-black leading-tight">晨间专注练习</h2>
+                <p class="mt-2 text-sm font-bold leading-6 text-white/85">呼吸、整理目标、进入第一段深度工作。</p>
+              </div>
+            </section>
+
+            <section class="glass-panel -mt-6 mx-3 p-4 relative z-10">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-xs font-black text-slate-500">今日完成度</p>
+                  <p class="mt-1 text-2xl font-black">68%</p>
+                </div>
+                <button class="primary-button" data-action="start"><i class="fa-solid fa-play"></i>开始</button>
+              </div>
+              <div class="mt-4 progress-bar"><span style="width: 68%;"></span></div>
+            </section>
+
+            <section class="mt-6 grid grid-cols-2 gap-3">
+              <button class="soft-card lift p-4 text-left" data-action="done">
+                <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-100 text-blue-600"><i class="fa-solid fa-wind"></i></span>
+                <h3 class="mt-4 text-base font-black">呼吸校准</h3>
+                <p class="mt-1 text-xs font-bold text-slate-500">6 分钟 · 轻声引导</p>
+              </button>
+              <button class="soft-card lift p-4 text-left" data-action="checkin">
+                <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600"><i class="fa-solid fa-pen-nib"></i></span>
+                <h3 class="mt-4 text-base font-black">情绪记录</h3>
+                <p class="mt-1 text-xs font-bold text-slate-500">当前：稳定偏高</p>
+              </button>
+            </section>
+
+            <section class="mt-6 soft-card p-5">
+              <div class="mb-4 flex items-center justify-between">
+                <h2 class="text-xl font-black">今日节奏</h2>
+                <a class="text-sm font-black text-blue-600" href="plan.html">调整</a>
+              </div>
+              <div class="space-y-4">
+                <div class="flex gap-4">
+                  <span class="mt-1 h-3 w-3 rounded-full bg-blue-500"></span>
+                  <div>
+                    <p class="font-black">09:30 深度工作第一段</p>
+                    <p class="mt-1 text-sm font-medium text-slate-500">关闭通知，完成方案初稿。</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <span class="mt-1 h-3 w-3 rounded-full bg-emerald-400"></span>
+                  <div>
+                    <p class="font-black">13:40 课程复习</p>
+                    <p class="mt-1 text-sm font-medium text-slate-500">继续学习“低压沟通”。</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <span class="mt-1 h-3 w-3 rounded-full bg-amber-400"></span>
+                  <div>
+                    <p class="font-black">21:30 共修打卡</p>
+                    <p class="mt-1 text-sm font-medium text-slate-500">和小组同步今天的一件进展。</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <nav class="bottom-tab" style="--tabs: 6;">
+            <a class="tab-item active" href="today.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+            <a class="tab-item" href="courses.html"><i class="fa-solid fa-book-open"></i><span>课程</span></a>
+            <a class="tab-item" href="plan.html"><i class="fa-solid fa-calendar"></i><span>计划</span></a>
+            <a class="tab-item" href="insights.html"><i class="fa-solid fa-chart-simple"></i><span>洞察</span></a>
+            <a class="tab-item" href="community.html"><i class="fa-solid fa-users"></i><span>社群</span></a>
+            <a class="tab-item" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <div class="floating-toast" data-toast></div>
+    <script src="app.js"></script>
+  </body>
+</html>

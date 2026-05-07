@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XX 洞察</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="phone-wrap">
+      <section class="phone-shell">
+        <div class="app-screen">
+          <div class="status-bar">
+            <span>9:41</span>
+            <div class="dynamic-island"></div>
+            <span class="flex items-center gap-1"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-three-quarters"></i></span>
+          </div>
+
+          <div class="app-content">
+            <header class="mb-5 flex items-center justify-between">
+              <div>
+                <p class="text-sm font-black text-slate-500">成长洞察</p>
+                <h1 class="mt-1 text-3xl font-black text-slate-950">看见稳定发生的变化</h1>
+              </div>
+              <button class="icon-button" data-action="sync" aria-label="同步"><i class="fa-solid fa-arrows-rotate"></i></button>
+            </header>
+
+            <section class="soft-card p-5">
+              <div class="mb-5 flex items-center justify-between">
+                <div>
+                  <p class="text-xs font-black text-slate-500">本周专注</p>
+                  <p class="mt-1 text-3xl font-black">8.6 小时</p>
+                </div>
+                <span class="chip bg-emerald-100 text-emerald-700"><i class="fa-solid fa-arrow-trend-up"></i>提升 18%</span>
+              </div>
+              <div class="flex h-44 items-end gap-3">
+                <div class="flex-1 rounded-full bg-blue-200" style="height: 38%;"></div>
+                <div class="flex-1 rounded-full bg-blue-400" style="height: 58%;"></div>
+                <div class="flex-1 rounded-full bg-emerald-300" style="height: 48%;"></div>
+                <div class="flex-1 rounded-full bg-violet-400" style="height: 72%;"></div>
+                <div class="flex-1 rounded-full bg-amber-300" style="height: 66%;"></div>
+                <div class="flex-1 rounded-full bg-rose-300" style="height: 44%;"></div>
+                <div class="flex-1 rounded-full bg-slate-950" style="height: 86%;"></div>
+              </div>
+              <div class="mt-4 grid grid-cols-7 text-center text-xs font-black text-slate-400">
+                <span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span>
+              </div>
+            </section>
+
+            <section class="mt-6 segmented" style="--segments: 3;" data-segment-group>
+              <button class="segment active" data-segment data-message="已查看专注洞察">专注</button>
+              <button class="segment" data-segment data-message="已查看情绪洞察">情绪</button>
+              <button class="segment" data-segment data-message="已查看习惯洞察">习惯</button>
+            </section>
+
+            <section class="mt-6 grid grid-cols-2 gap-3">
+              <article class="soft-card p-4">
+                <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600"><i class="fa-solid fa-face-smile"></i></span>
+                <p class="mt-4 text-sm font-black text-slate-500">情绪稳定度</p>
+                <p class="mt-1 text-2xl font-black">82</p>
+                <p class="mt-2 text-xs font-bold text-slate-500">连续三天保持高位</p>
+              </article>
+              <article class="soft-card p-4">
+                <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-amber-100 text-amber-600"><i class="fa-solid fa-fire"></i></span>
+                <p class="mt-4 text-sm font-black text-slate-500">连续打卡</p>
+                <p class="mt-1 text-2xl font-black">21 天</p>
+                <p class="mt-2 text-xs font-bold text-slate-500">超过 74% 的用户</p>
+              </article>
+            </section>
+
+            <section class="mt-6 soft-card p-5">
+              <div class="mb-4 flex items-center justify-between">
+                <h2 class="text-xl font-black">本周建议</h2>
+                <button class="secondary-button" data-action="save"><i class="fa-solid fa-bookmark"></i>保存</button>
+              </div>
+              <p class="text-sm font-medium leading-7 text-slate-600">
+                你在上午 9 点到 11 点的专注表现最好。建议把需要创造性输出的任务放在这个时间段，下午安排沟通和整理型事务。
+              </p>
+            </section>
+          </div>
+
+          <nav class="bottom-tab" style="--tabs: 6;">
+            <a class="tab-item" href="today.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+            <a class="tab-item" href="courses.html"><i class="fa-solid fa-book-open"></i><span>课程</span></a>
+            <a class="tab-item" href="plan.html"><i class="fa-solid fa-calendar"></i><span>计划</span></a>
+            <a class="tab-item active" href="insights.html"><i class="fa-solid fa-chart-simple"></i><span>洞察</span></a>
+            <a class="tab-item" href="community.html"><i class="fa-solid fa-users"></i><span>社群</span></a>
+            <a class="tab-item" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <div class="floating-toast" data-toast></div>
+    <script src="app.js"></script>
+  </body>
+</html>

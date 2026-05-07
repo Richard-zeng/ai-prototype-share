@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>诗栖 - 设置</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body class="prototype-screen">
+    <div class="app-screen">
+      <div class="status-bar">
+        <span>9:41</span>
+        <div class="dynamic-island"></div>
+        <div class="status-icons">
+          <i class="fa-solid fa-signal"></i>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-three-quarters"></i>
+        </div>
+      </div>
+
+      <header class="nav-bar">
+        <button class="icon-button" aria-label="返回" onclick="location.href='profile.html'"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="text-center">
+          <h1 class="nav-title !text-[24px]">设置</h1>
+          <div class="nav-subtitle">阅读与账户</div>
+        </div>
+        <button class="icon-button" aria-label="帮助"><i class="fa-regular fa-circle-question"></i></button>
+      </header>
+
+      <main class="screen-content">
+        <section class="solid-card px-4">
+          <div class="toggle-line">
+            <div class="flex items-center gap-3">
+              <div class="avatar !w-10 !h-10 !rounded-2xl !bg-[#f2ded7] !text-[var(--cinnabar)]"><i class="fa-solid fa-user-shield"></i></div>
+              <div><strong>账户与同步</strong><div class="mini-label">iCloud 已开启</div></div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-[var(--soft)]"></i>
+          </div>
+          <div class="toggle-line">
+            <div class="flex items-center gap-3">
+              <div class="avatar !w-10 !h-10 !rounded-2xl"><i class="fa-solid fa-download"></i></div>
+              <div><strong>离线诗库</strong><div class="mini-label">唐诗三百首 · 已下载</div></div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-[var(--soft)]"></i>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <h2>阅读</h2>
+          <span></span>
+        </section>
+        <section class="solid-card p-4">
+          <div class="toggle-line !pt-0">
+            <div><strong>纸色主题</strong><div class="mini-label">宣纸暖白</div></div>
+            <div class="flex gap-2">
+              <button class="w-8 h-8 rounded-full border-2 border-[var(--cinnabar)] bg-[#fffaf1]" aria-label="宣纸暖白"></button>
+              <button class="w-8 h-8 rounded-full border border-black/10 bg-[#e6efe7]" aria-label="青瓷绿"></button>
+              <button class="w-8 h-8 rounded-full border border-black/10 bg-[#1f1a16]" aria-label="墨夜"></button>
+            </div>
+          </div>
+          <div class="toggle-line">
+            <div><strong>字号</strong><div class="mini-label">诗文 26 px</div></div>
+            <input data-text-range type="range" min="22" max="32" value="26" class="w-[122px] accent-[var(--jade)]" aria-label="字号" />
+          </div>
+          <div class="toggle-line">
+            <div><strong>繁简转换</strong><div class="mini-label">自动跟随系统</div></div>
+            <label class="switch"><input type="checkbox" checked /><span></span></label>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <h2>朗读</h2>
+          <span></span>
+        </section>
+        <section class="solid-card px-4">
+          <div class="toggle-line">
+            <div><strong>默认音色</strong><div class="mini-label">温润男声 · 普通话</div></div>
+            <span class="pill">切换</span>
+          </div>
+          <div class="toggle-line">
+            <div><strong>后台播放</strong><div class="mini-label">锁屏继续朗读</div></div>
+            <label class="switch"><input type="checkbox" checked /><span></span></label>
+          </div>
+          <div class="toggle-line">
+            <div><strong>每日提醒</strong><div class="mini-label">21:30 夜读</div></div>
+            <label class="switch"><input type="checkbox" /><span></span></label>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <h2>更多</h2>
+          <span></span>
+        </section>
+        <section class="solid-card px-4">
+          <div class="toggle-line">
+            <div><strong>隐私与权限</strong><div class="mini-label">学习数据仅本机可见</div></div>
+            <i class="fa-solid fa-chevron-right text-[var(--soft)]"></i>
+          </div>
+          <div class="toggle-line">
+            <div><strong>关于诗栖</strong><div class="mini-label">版本 1.0.0</div></div>
+            <i class="fa-solid fa-chevron-right text-[var(--soft)]"></i>
+          </div>
+        </section>
+      </main>
+
+      <nav class="tab-bar" aria-label="主导航">
+        <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+        <a class="tab-item" href="discover.html"><i class="fa-solid fa-compass"></i><span>发现</span></a>
+        <a class="tab-item" href="practice.html"><i class="fa-solid fa-pen-nib"></i><span>练习</span></a>
+        <a class="tab-item" href="library.html"><i class="fa-solid fa-book-bookmark"></i><span>收藏</span></a>
+        <a class="tab-item active" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+      </nav>
+      <div class="home-indicator"></div>
+    </div>
+  </body>
+</html>

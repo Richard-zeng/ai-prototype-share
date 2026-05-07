@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>死了么 - 高保真原型总览</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="board-body">
+    <main class="board-shell">
+      <section class="board-hero">
+        <div class="board-card p-7">
+          <div class="inline-flex h-12 w-12 items-center justify-center rounded-[12px] bg-[#17211d] text-[#7ff0c6]">
+            <i class="fa-solid fa-heart-pulse text-xl"></i>
+          </div>
+          <h1 class="mt-5 text-[44px] font-black leading-none tracking-normal">死了么</h1>
+          <p class="mt-4 text-lg font-bold leading-relaxed text-[#55645d]">给独居 90 后的每日安全确认 App。核心不是制造恐惧，而是用黑色幽默降低“报平安”的心理负担，让亲友、设备和上门服务形成闭环。</p>
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="chip bg-white">iPhone 15 Pro</span>
+            <span class="chip bg-white">Tailwind CSS</span>
+            <span class="chip bg-white">FontAwesome</span>
+            <span class="chip bg-white">iframe 平铺</span>
+          </div>
+        </div>
+
+        <div class="board-card p-7">
+          <div class="grid gap-6 md:grid-cols-2">
+            <section>
+              <h2 class="text-base font-black">1. 用户体验分析</h2>
+              <p class="mt-2 text-sm font-semibold leading-relaxed text-[#627168]">目标用户是独居、社恐、作息不稳定的年轻人。痛点是“每天报平安很尴尬”“亲友不知道何时该介入”“真实异常缺少轻量流程”。核心路径为每日打卡、超时提醒、亲友确认、骑手安全查看、必要时善后协作。</p>
+            </section>
+            <section>
+              <h2 class="text-base font-black">2. 产品界面规划</h2>
+              <p class="mt-2 text-sm font-semibold leading-relaxed text-[#627168]">信息架构按用户端和骑手端拆分：用户端包含首页、报平安、预警、订单详情、社区、我的、新手设置；骑手端聚焦接单、订单风险、授权边界和收益。</p>
+            </section>
+            <section>
+              <h2 class="text-base font-black">3. 高保真 UI 设计</h2>
+              <p class="mt-2 text-sm font-semibold leading-relaxed text-[#627168]">视觉使用薄荷绿、珊瑚红、薰衣草浅色和深色骑手页。所有 App 屏模拟 iOS 状态栏、动态岛、底部 Tab Bar、卡片、按钮、列表、时间线与真实图片。</p>
+            </section>
+            <section>
+              <h2 class="text-base font-black">4. HTML 原型实现</h2>
+              <p class="mt-2 text-sm font-semibold leading-relaxed text-[#627168]">每个界面都是独立 HTML 文件，入口页只通过 iframe 嵌入，不复制子页面代码。可直接交给开发拆组件、抽数据和接接口。</p>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="phone-grid" aria-label="原型界面平铺">
+        <article class="phone-card">
+          <h2>首页 Home · 每日状态总览</h2>
+          <div class="phone-frame"><iframe src="home.html" title="首页" loading="eager"></iframe></div>
+        </article>
+        <article class="phone-card">
+          <h2>报平安 Check-in · 今日存活证明</h2>
+          <div class="phone-frame"><iframe src="checkin.html" title="报平安" loading="eager"></iframe></div>
+        </article>
+        <article class="phone-card">
+          <h2>预警 Alerts · 超时处理中心</h2>
+          <div class="phone-frame"><iframe src="alerts.html" title="预警中心" loading="eager"></iframe></div>
+        </article>
+        <article class="phone-card">
+          <h2>订单详情 Order · 骑手上门进度</h2>
+          <div class="phone-frame"><iframe src="order-detail.html" title="订单详情" loading="eager"></iframe></div>
+        </article>
+        <article class="phone-card">
+          <h2>骑手 Rider · 赛博接单台</h2>
+          <div class="phone-frame"><iframe src="rider.html" title="骑手接单" loading="eager"></iframe></div>
+        </article>
+        <article class="phone-card">
+          <h2>社区 Community · 活人广场</h2>
+          <div class="phone-frame"><iframe src="community.html" title="社区" loading="eager"></iframe></div>
+        </article>
+        <article class="phone-card">
+          <h2>我的 Profile · 守护配置</h2>
+          <div class="phone-frame"><iframe src="profile.html" title="我的" loading="eager"></iframe></div>
+        </article>
+        <article class="phone-card">
+          <h2>新手设置 Onboarding · 兜底网配置</h2>
+          <div class="phone-frame"><iframe src="onboarding.html" title="新手设置" loading="eager"></iframe></div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

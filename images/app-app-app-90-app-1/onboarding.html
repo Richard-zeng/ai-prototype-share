@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>死了么 - 新手设置</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body class="app-body">
+    <main class="app-screen">
+      <div class="statusbar">
+        <span data-now>09:41</span>
+        <span class="dynamic-island"></span>
+        <span class="signal-icons"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-three-quarters"></i></span>
+      </div>
+
+      <header class="topbar">
+        <div>
+          <h1>先别急着躺</h1>
+          <span class="sub">3 步把兜底网织好</span>
+        </div>
+        <span class="pill">2/3</span>
+      </header>
+
+      <section class="content">
+        <section class="image-card p-4 flex items-end" style="background-image: linear-gradient(180deg, rgba(251,255,249,0.1), rgba(251,255,249,0.96)), url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80');">
+          <div>
+            <div class="title-xl">设置你的活人雷达</div>
+            <p class="muted mt-2 text-[13px] font-semibold">没人打扰你，但该出现时大家都知道怎么出现。</p>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <span>打卡频率</span>
+          <span class="meta">推荐每日</span>
+        </section>
+
+        <section class="card p-4">
+          <div class="segmented">
+            <span>早晚</span>
+            <span class="active">每日</span>
+            <span>佛系</span>
+          </div>
+          <div class="mt-4 flex items-center justify-between">
+            <div>
+              <strong class="block text-sm font-black">提醒时间</strong>
+              <span class="meta">每天 21:30，适合夜猫未变身前</span>
+            </div>
+            <span class="pill">21:30</span>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <span>添加守护人</span>
+          <span class="meta">至少 2 位</span>
+        </section>
+
+        <section class="card px-4">
+          <div class="list-row">
+            <div class="flex items-center gap-3">
+              <span class="grid h-10 w-10 place-items-center rounded-full bg-emerald-100 text-emerald-700"><i class="fa-solid fa-user-plus"></i></span>
+              <div><strong>微信好友</strong><span>适合能接受你胡言乱语的人</span></div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </div>
+          <div class="list-row">
+            <div class="flex items-center gap-3">
+              <span class="grid h-10 w-10 place-items-center rounded-full bg-[#fff2dd] text-[#a35d00]"><i class="fa-solid fa-building"></i></span>
+              <div><strong>物业 / 房东</strong><span>只在升级预警后可见</span></div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+          </div>
+        </section>
+
+        <section class="section-title">
+          <span>隐私承诺</span>
+          <span class="pill bg-emerald-50 text-emerald-700"><i class="fa-solid fa-lock"></i> 加密</span>
+        </section>
+
+        <section class="card p-4">
+          <div class="grid gap-3">
+            <label class="flex items-start gap-3 text-[13px] font-bold leading-relaxed">
+              <input class="mt-1 accent-emerald-500" type="checkbox" checked />
+              <span>骑手只在授权后看到必要地址，不能围观你的脏衣服宇宙。</span>
+            </label>
+            <label class="flex items-start gap-3 text-[13px] font-bold leading-relaxed">
+              <input class="mt-1 accent-emerald-500" type="checkbox" checked />
+              <span>所有上门记录留痕，守护人也不能拿你的独居生活写小作文。</span>
+            </label>
+          </div>
+          <button class="btn-primary mt-5 w-full">保存，继续当个体面活人</button>
+        </section>
+      </section>
+
+      <nav class="tabbar" aria-label="底部导航">
+        <a class="tab-item active" href="onboarding.html"><i class="fa-solid fa-wand-magic-sparkles"></i><span>设置</span></a>
+        <a class="tab-item" href="home.html"><i class="fa-solid fa-house"></i><span>首页</span></a>
+        <a class="tab-item" href="alerts.html"><i class="fa-solid fa-bell"></i><span>预警</span></a>
+        <a class="tab-item" href="profile.html"><i class="fa-solid fa-user-astronaut"></i><span>我的</span></a>
+      </nav>
+    </main>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XX 社群</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="phone-wrap">
+      <section class="phone-shell">
+        <div class="app-screen">
+          <div class="status-bar">
+            <span>9:41</span>
+            <div class="dynamic-island"></div>
+            <span class="flex items-center gap-1"><i class="fa-solid fa-signal"></i><i class="fa-solid fa-wifi"></i><i class="fa-solid fa-battery-three-quarters"></i></span>
+          </div>
+
+          <div class="app-content">
+            <header class="mb-5 flex items-center justify-between">
+              <div>
+                <p class="text-sm font-black text-slate-500">共修社群</p>
+                <h1 class="mt-1 text-3xl font-black text-slate-950">一起把小事坚持下去</h1>
+              </div>
+              <button class="icon-button" data-action="join" aria-label="加入"><i class="fa-solid fa-user-plus"></i></button>
+            </header>
+
+            <section class="page-hero">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=85" alt="朋友们围坐交谈" />
+              <div class="hero-copy">
+                <h2 class="text-3xl font-black leading-tight">今晚 21:30 安静打卡</h2>
+                <p class="mt-2 text-sm font-bold leading-6 text-white/85">30 分钟共修，结束后分享今天最重要的一步。</p>
+                <button class="primary-button mt-4 !bg-white !text-slate-950" data-action="join"><i class="fa-solid fa-users"></i>加入共修</button>
+              </div>
+            </section>
+
+            <section class="mt-6 grid grid-cols-3 gap-3">
+              <article class="tiny-card p-4 text-center">
+                <p class="text-2xl font-black">128</p>
+                <p class="mt-1 text-xs font-black text-slate-500">在线伙伴</p>
+              </article>
+              <article class="tiny-card p-4 text-center">
+                <p class="text-2xl font-black">42</p>
+                <p class="mt-1 text-xs font-black text-slate-500">今日打卡</p>
+              </article>
+              <article class="tiny-card p-4 text-center">
+                <p class="text-2xl font-black">9</p>
+                <p class="mt-1 text-xs font-black text-slate-500">主题小组</p>
+              </article>
+            </section>
+
+            <section class="mt-6 soft-card p-5">
+              <div class="mb-4 flex items-center justify-between">
+                <h2 class="text-xl font-black">伙伴动态</h2>
+                <span class="text-sm font-black text-blue-600">全部</span>
+              </div>
+              <div class="space-y-4">
+                <article class="flex gap-3">
+                  <img class="h-12 w-12 rounded-2xl object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="伙伴头像" />
+                  <div class="min-w-0 flex-1">
+                    <div class="flex items-center justify-between">
+                      <p class="font-black">阿澈</p>
+                      <button class="text-sm font-black text-blue-600" data-action="follow">关注</button>
+                    </div>
+                    <p class="mt-1 text-sm font-medium leading-6 text-slate-600">今天完成了第一版提案，晚间练习让我没有被焦虑带走。</p>
+                  </div>
+                </article>
+                <article class="flex gap-3">
+                  <img class="h-12 w-12 rounded-2xl object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="伙伴头像" />
+                  <div class="min-w-0 flex-1">
+                    <div class="flex items-center justify-between">
+                      <p class="font-black">沈青</p>
+                      <button class="text-sm font-black text-blue-600" data-action="follow">关注</button>
+                    </div>
+                    <p class="mt-1 text-sm font-medium leading-6 text-slate-600">连续打卡第 14 天，开始能更快识别自己的低电量状态。</p>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+
+          <nav class="bottom-tab" style="--tabs: 6;">
+            <a class="tab-item" href="today.html"><i class="fa-solid fa-house"></i><span>今日</span></a>
+            <a class="tab-item" href="courses.html"><i class="fa-solid fa-book-open"></i><span>课程</span></a>
+            <a class="tab-item" href="plan.html"><i class="fa-solid fa-calendar"></i><span>计划</span></a>
+            <a class="tab-item" href="insights.html"><i class="fa-solid fa-chart-simple"></i><span>洞察</span></a>
+            <a class="tab-item active" href="community.html"><i class="fa-solid fa-users"></i><span>社群</span></a>
+            <a class="tab-item" href="profile.html"><i class="fa-solid fa-user"></i><span>我的</span></a>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <div class="floating-toast" data-toast></div>
+    <script src="app.js"></script>
+  </body>
+</html>
