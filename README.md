@@ -107,7 +107,6 @@ images/
 
 **目录：** `images/prototypes/short-video-app/`
 
-> [!TIP]
 > **Prompt**
 >
 > ```text
@@ -170,7 +169,6 @@ images/
 
 **目录：** `images/prototypes/nova-todo/`
 
-> [!TIP]
 > **Prompt**
 >
 > ```text
